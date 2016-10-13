@@ -8,14 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.touchSwipe.min.js"></script>
-    <script src="js/html5lightbox/html5lightbox.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
-    <script src="js/common.js"></script>
 </head>
 
 <body>
@@ -24,19 +19,23 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <img src="images/navClose.png" class="navClose" style="display:none;">
+            </button>
             <div class="navbar-brand"><img src="images/navLogo.png"></div>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">发现新点</a></li>
-                <li><a href="#">创出新点</a></li>
-                <li><a href="#">玩出新点</a></li>
-                <li><a href="#">派对大师</a></li>
-                <li><a href="#">新点炫饮</a></li>
-                <li><a href="#">会员中心</a></li>
+                <li class="active"><a class="centerA" href="index.html">发现新点</a></li>
+                <li><a class="centerA" href="brand.html">闯出新点</a></li>
+                <li><a class="centerA" href="event.html">玩出新点</a></li>
+                <li><a class="centerA" href="party.html">派对大师</a></li>
+                <li><a class="centerA" href="drink.html">新点炫饮</a></li>
+                <li><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
                 	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
                     <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
@@ -55,199 +54,179 @@
 </nav>
 <!--nav end-->
 
-<!--static kv start-->
-<div class="staticKv">
-    <div class="container">
-        <div class="jumbotron">
-            <div class="innerDiv">
-                <div class="abs kvEf">
-                	<div class="innerDiv">
-                    	<a href="javascript:void(0);" onClick="playSingleVideo('XMTY3MjQ1MTY3Mg==');" class="abs kvVideo">年&nbsp;轻&nbsp;人&nbsp;都&nbsp;在&nbsp;看 <img
-                        src="images/playBtn.png"></a>
-                    </div>
-                </div>
-                <div class="abs downNote"></div>
+<!--brand kv start-->
+<div class="brandKv">
+	<div class="container" style="width:100%; max-width:1920px;">
+    	<div class="col-xs-12">
+        	<div class="innerDiv">
+            	<img src="images/brand/kv.png" width="100%" style="display:block;">
+                <img src="images/brand/logo.png" class="abs bkLogo">
+                <img src="images/brand/bottle.png" class="abs bkBottle">
             </div>
         </div>
     </div>
 </div>
-<!--static kv end-->
+<!--brand kv start-->
 
-<!--index start-->
-<div class="indexBlock">
+<!--brand start-->
+<div class="brandBlock">
     <div class="container">
-        <div class="indexTop">
-            <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 indexVideo">
+    	<div class="indexTop">
+            <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 indexVideo">
                 <div class="topTitle">
-                    <div class="topEnTitle"> BREAK OUT<br>
-                        YOUR OWN<br>
-                        PATH
-                    </div>
-                    就跟我闯
+                    <div class="topEnTitle"></div>
+                    发现新点
                 </div>
                 <div class="topContext">
-                    <div class="innerDiv"> 与其每天8小时陷入PPT的套路<br>
-                        不如跳进PPT，闯出一条自己的路<br>
-                        <br class="mobileShow">
-                        我好像不小心闯进了<br class="mobileShow">
-                        PPT的新奇世界里<br class="mobileShow">
-                        …… 
-                        <img src="images/quotationLeft.png" class="abs qLeft">
-                        <img src="images/quotationRight.png" class="abs qRight">
+                    <div class="innerDiv">全 球 优 质 干 邑 酿 造 者 — HENNESSY 轩 尼 诗，1 7 6 5 年 创 立 于 法 国。秉 持 着 酿 造 全 球 优 秀 干 邑 的 理 念，轩 尼 诗 <br class="pcShow">家 族 在 传 承 经 典 的 同 时 力 求 创 新，精 致 呈 现 轩 尼 诗 新 点 —— 谱 合 法 国 干 邑 地 区“生 命 之 水”的 清 新 和 <br class="pcShow">陈 年 的 辛 香 活 力，重 新 诠 释 轩 尼 诗 长 久 秉 承 的 经 典，并 置 身 于 时 尚 潮 流 最 前 沿。<br><br>
+                    敢 冲 敢 闯，打 破 传 统；抛 弃 套 路，闯 出 新 路，这 就 是 干 邑 潮 牌 轩 尼 诗 新 点。<br class="pcShow">用 年 轻 潮 流 创 意 开 启 干 邑 新 篇 章，年 轻 就 是 要 闯 出 新 点。
                     </div>
-                </div>
-                <div class="topVideo"><a href="javascript:void(0);" onClick="playSingleVideo('XMTY3MjQ1MTY3Mg==');"><img src="images/topVideoBg.png" width="100%"></a>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="indexLine1">
-        	<div class="lineBlock1 pcShow"></div>
-            <div class=" col-md-5 col-md-offset-2 col-sm-7 col-sm-offset-1 col-xs-12 indexLine1left anmBlock">
-                <div class="col-sm-9 needShow needShowa" style="opacity:0;">
-                    <div class="topTitle subTitle">
-                        <div class="topEnTitle subEnTitle"> DANCE<br>
-                            CHALLENGE
-                        </div>
-                        舞出新点
-                    </div>
-                    <div class="subContext"> 撕掉别人给你的标签<br>
-                        打破一成不变的规则<br>
-                        舞出独一无二的自己<br>
-                        哪里都是你的主场！
-                    </div>
+        
+        <div class="brandLine brandLine1">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine1Left anmBlock">
+                    <img src="images/brand/b_70.png" width="100%" class="needShowa" style="opacity:0;">
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-7 col-xs-12 indexLine1Right anmBlock">
-            	<img src="images/index/line1Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
-                <img src="images/index/line1Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
-            </div>
-            <div class="indexLineBottom indexLine1Bottom">
-                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img1.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/img2.png" class="lGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img2.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/img3.png" class="lGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img3.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img4.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine1Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<div class="brandTitle">
+                            <div class="brandEnTitle"></div>
+                            轩尼诗新点 70CL
+                        </div>
+                        <div class="brandContext">轩 尼 诗 新 点 70CL 口 感 层 次 丰 富，随 着 各 种 软 饮 的 兑 入 而 更 添 回 味，绝 对 是 混 搭 高 手。</div>
+                        <div class="brandBuyLink">
+                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
+                        </div>
+					</div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
-        <div class="indexLine2">
-            <div class=" col-md-5 col-md-offset-2 col-sm-7 col-sm-offset-1 col-xs-12  indexLine2left anmBlock">
-                <div class="col-sm-9 needShow needShowa" style="opacity:0;">
-                    <div class="topTitle subTitle">
-                        <div class="topEnTitle subEnTitle"> LAUNCH<br>
-                            EVENT
+        
+        <div class="brandLine brandLine2">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine2Left anmBlock">
+                    <img src="images/brand/b_20.png" width="100%" class="needShowa" style="opacity:0;">
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine2Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<div class="brandTitle">
+                            <div class="brandEnTitle"></div>
+                            轩尼诗新点 20CL
                         </div>
-                        NOFFICE
-                    </div>
-                    <div class="subContext">开会、加班、奋战......想逃离办公室？！<br>
-                    11月5日，一场开了挂的新点潮趴，<br>
-                    闯入压力山大的 OFFICE<br>
-                    办公室从此告别天然闷，迎来自由 HIGH ！
-                    </div>
+                        <div class="brandContext">轩 尼 诗 新 点 20CL 小 绿 瓶 专 为 潮 客 们 而 设 计，荧 光 绿 的 瓶 身 彰 显 年 轻 个 性，小 巧 的 体 积 任 你 随 心 携 带，派对<br>ALL THE TIME！</div>
+                        <div class="brandBuyLink">
+                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
+                        </div>
+					</div>
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-md-6 col-sm-7 col-xs-12 indexLine2Right anmBlock">
-            	<div class="innerDiv">
-                	<div class="lineBlock2 pcShow needShowb" style="opacity:0;"></div>
-                    <img src="images/index/line2Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
-                    <img src="images/index/line2Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
+        </div>
+        
+        <div class="brandLine brandLine3">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine3Left anmBlock">
+                    <img src="images/brand/b_150.png" width="100%" class="needShowa" style="opacity:0;">
                 </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine3Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<div class="brandTitle">
+                            <div class="brandEnTitle"></div>
+                            轩尼诗新点 150CL
+                        </div>
+                        <div class="brandContext">轩 尼 诗 新 点 150CL，馥 郁 辛 香 的 口 感 令 人 回 味 无 穷。派 对 霸 王 一 出 惊 艳 全 场，大 瓶 装 更 适 合 与 众 人 共 分 享，满 足 全 场 亲 朋 好 友。</div>
+                        <div class="brandBuyLink">
+                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
+                        </div>
+					</div>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="indexLineBottom indexLine2Bottom">
-                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="col-sm-6 col-xs-12">
-                        <a href="images/index/galleyImg3.mp4" class="lGallery vGallery html5lightbox" data-group="gallery2">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img6.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg2.jpg" class="lGallery html5lightbox" data-group="gallery2">
-                        	<div class="innerDiv">
-                            	<img src="images/index/img5.png" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
+        </div>
+        
+        <div class="brandLine brandLine4">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine4Left anmBlock">
+                    <div class="brandLineLeftContent needShowa" style="opacity:0;">
+                    	<div class="brandTitle">
+                            <div class="brandEnTitle"></div>
+                            乐享新点
+                        </div>
+                        <div class="brandContext">颜 色：深 赭 色<br>
+                        嗅 感：富 有 活 力 的 辛 香，带 些 许 薄 荷 气 息<br>
+                        口 感：胡 椒、鲜 捣 生 姜，带 着 淡 淡 薄 荷 味<br>
+                        饮 用：纯 饮、加 冰 块，或 混 合 作 为 长 饮 鸡 尾 酒 也 非 常 合 适<br>
+                        建 议 搭 配：脉 动 (青 柠 口 味)、乌 龙 茶、雪 碧 等 各 种 软 饮</div>
+                        <div class="brandBuyBtn">
+                            <a href="javascript:void(0);" class="brandBtn">点击查看</a>
+                        </div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine4Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<div class="brandTitle">
+                            <div class="brandEnTitle"></div>
+                            了解新点
+                        </div>
+                        <div class="brandContext">原 料：葡 萄、焦 糖 色<br>
+                        酒 精 度：40% vol<br>
+                        原 产 地：法 国<br>
+                        储 存 方 法：常 温 保 存，避 免 阳 光 直 射</div>
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="brandLine brandInfo">
+            <div class="innerDiv">
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <div class="biTop">
                         <div class="innerDiv">
-                        	<a href="images/index/galleyImg1.jpg" class="html5lightbox" data-group="gallery2">
-                            	<div class="innerDiv">
-                        			<img src="images/block1.png" width="100%">
-                                    <div class="indexLine2BottomMore">
-                                    	查 看 更 多 <img src="images/block1RightArrow.png">
-                                    </div>
-                                </div>
-                            </a>
+                            <img src="images/brand/infoTop.png" width="100%">
+                            <div class="bitTxt">干邑并非酿造<br>而是创造</div>
                         </div>
                     </div>
-                    <a href="http://youku" vid="XMTY3MjQ1MTY3Mg==" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
-                    <a href="http://youku" vid="XMTY3MjQzMDUyMA==" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-12 biBottom">
+                    <div class="bibLeft">
+                        <div class="bibTop">
+                            <div class="innerDiv">
+                                <img src="images/brand/info1.png" width="100%">
+                                <div class="bibTxt"><span>Cognac</span><br>干邑白兰地</div>
+                            </div>
+                        </div>
+                        <div class="bibBottom">
+                            酒精浓度高于40度的酒即被称为烈酒，通常所说的白兰地，主要是指以葡萄为原料、经蒸馏浓缩制成的烈酒。但是，不是所有的白兰地都能被称之为干邑，只有在法国干邑镇——全世界优质干邑产区——生产的白兰地，并经过干邑生产监管组织认证的白兰地才可以称作干邑。
+                        </div>
+                    </div>
+                    
+                    <div class="bibRight">
+                        <div class="bibTop">
+                            <div class="innerDiv">
+                                <img src="images/brand/info2.png" width="100%">
+                                <div class="bibTxt"><span>Eau de Vie</span><br>生命之水</div>
+                            </div>
+                        </div>
+                        <div class="bibBottom">
+                            为了确保干邑的香气达到至高且多元的境界，轩尼诗仅采用从四个产区精挑细选的生命之水，他们是大香槟区、小香槟区、波尔德里区和优质林区。荣幸中选的生命之水，有朝一日才能变成出类拔萃的轩尼诗干邑。<br><br>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
+        
     </div>
 </div>
-<!--index end-->
+<!--brand end-->
 
 <!--foot start-->
 <footer class="foot1">
@@ -324,25 +303,26 @@
 </footer>
 <!--foot end-->
 
-<!--youku video start-->
-<div class="embed-responsive embed-responsive-16by9 videoPop" style="display:none;">
-	<div class="videoYouku" id="videoYouku"></div>
-	<a href="javascript:void(0);" class="popCloseBtn" onClick="closeSingleVideo();"><img src="images/btnClose.png"></a>
-</div>
-<!--youku video end-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/html5lightbox/html5lightbox.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+<script src="js/bxslider/jquery.bxslider.min.js"></script>
+<script src="js/common.js"></script>
 
 <script>
 //单页加载完毕
 $(document).ready(function(){
-	indexPos();
+	brandPos();
 	});
 //单页窗口大小改变
 $(window).resize(function(){
-	indexPos();
+	brandPos();
 	});
 //单页滚动
 $(window).scroll(function(){
-	indexScorll();
+	brandScorll();
 	});
 </script>
 

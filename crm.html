@@ -30,12 +30,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-            	<li><a class="centerA" href="index.html">发现新点</a></li>
+                <li><a class="centerA" href="index.html">发现新点</a></li>
                 <li><a class="centerA" href="brand.html">闯出新点</a></li>
                 <li><a class="centerA" href="event.html">玩出新点</a></li>
                 <li><a class="centerA" href="party.html">派对大师</a></li>
                 <li><a class="centerA" href="drink.html">新点炫饮</a></li>
-                <li><a class="centerA" href="crm.html">会员中心</a></li>
+                <li class="active"><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
                 	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
                     <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
@@ -54,31 +54,25 @@
 </nav>
 <!--nav end-->
 
-<!--article start-->
-<div class="articleBlock">
-    <div class="container">
-    	<div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(1);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br>
-                一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
+<!--crm kv start-->
+<div class="crmKv">
+	<div class="container" style="width:100%; max-width:1920px;">
+    	<div class="col-xs-12">
+        	<div class="innerDiv">
+            	<img src="images/crm/kv.png" width="100%" class="pcShow">
+            	<img src="images/crm/kv_m.png" width="100%" class="mobileShow">
+            	<div class="crmLogoLine pcShow">
+                	<img src="images/crm/crmLogo.png">
+                </div>
+                <div class="crmKvLine">
+                	<img src="images/crm/qc.png" class="qc"><p class="crmKvTxt">终于等到你！<br class="mobileShow">欢迎进入酩悦轩尼诗会员积分兑换系<br class="pcShow">统！<br class="mobileShow"><font class="pcShow">请用手机扫描二维码，</font>关注轩尼诗新点官方微<br class="pcShow">信，在底部菜单栏<br class="mobileShow">找到“会员中心”，即可查询积<br class="pcShow">分、兑换<br class="mobileShow">礼品和参与抽奖。</p>
+                </div>
+            </div>
         </div>
-        <div class=" col-sm-8 col-sm-offset-2 col-xs-12  articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(2);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
-        </div>
-        <div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(3);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
-        </div>
+        <div class="clearfix"></div>
     </div>
 </div>
-<!--article end-->
+<!--crm kv end-->
 
 <!--foot start-->
 <footer class="foot1">
@@ -155,13 +149,6 @@
 </footer>
 <!--foot end-->
 
-<!--article detail start-->
-<div class="articleDetail" style="display:none;">
-    <div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleContent"></div>
-    <a href="javascript:void(0);" class="popCloseBtn" onClick="closeArticleDetail();"><img src="images/btnClose.png"></a>
-</div>
-<!--article detail end-->
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/html5lightbox/html5lightbox.js"></script>
@@ -171,28 +158,6 @@
 <script src="js/common.js"></script>
 
 <script>
-var isAdScroll=false;
-function showArticleDetail(aid){//aid 数据库文章编号
-	//更具aid 请求文章内容
-	$('.articleContent').height(wHeight-140);
-	var aDetail="<h1>新点炫饮"+aid+"</h1><br>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br><img src='images/footImg1.png' width='60%'><br><br>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br><img src='images/footImg1.png' width='60%'>";
-	
-	if(!isAdScroll){
-		isAdScroll=true;
-		$('.articleContent').append(aDetail);
-		$('.articleDetail').show();
-		$(".articleContent").mCustomScrollbar({
-			setHeight:wHeight-140,
-			theme:"inset-3-dark"
-			});
-		}
-		else{
-			$('.mCSB_container').html('');
-			$('.mCSB_container').append(aDetail);
-			$('.articleDetail').show();
-			}
-	}
-
 //单页加载完毕
 $(document).ready(function(){
 	});

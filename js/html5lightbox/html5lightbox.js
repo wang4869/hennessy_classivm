@@ -4,6 +4,7 @@
  * Version 6.2 
  */
  var youkuPlayer;
+ var isFisrtShow=true;
 (function() {
     var scripts = document.getElementsByTagName("script");
     var jsFolder = "";
@@ -67,7 +68,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                 overlaybgcolor: "#000",
                 overlayopacity: 0.9,
                 bgcolor: "#fff",
-                bordersize: 10,
+                bordersize: 0,
                 borderradius: 0,
                 bordermargin: 32,
                 bordertopmargin: 32,
@@ -272,7 +273,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
 					if(fileType!=12){//非优酷
 						inst.elemArray.push(new Array(fileType, $this.attr("href"), $this.attr("title"), $this.data("group"), $this.data("width"), $this.data("height"), $this.data("webm"), $this.data("ogg"), $this.data("thumbnail"), $this.data("description")))
 						}
-						else{//优酷
+						else if(isFisrtShow){//优酷
 							inst.elemArray.push(new Array(fileType, $this.attr("vid"), $this.attr("title"), $this.data("group"), $this.data("width"), $this.data("height"), $this.data("webm"), $this.data("ogg"), $this.data("thumbnail"), $this.data("description")))
 							}
                 })
@@ -416,7 +417,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     })
                 }
                 if (inst.options.fullscreenmode) {
-                    inst.$lightbox.append("<div class='html5-next-fullscreen' style='cursor:pointer;position:absolute;right:" + inst.options.bordersize + "px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreennextimage + "'></div>" + "<div class='html5-prev-fullscreen' style='cursor:pointer;position:absolute;left:" + inst.options.bordersize + "px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreenprevimage + "'></div>");
+                    inst.$lightbox.append("<div class='html5-next-fullscreen' style='cursor:pointer;position:absolute;right:20px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreennextimage + "'></div>" + "<div class='html5-prev-fullscreen' style='cursor:pointer;position:absolute;left:20px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreenprevimage + "'></div>");
                     inst.$next = $(".html5-next-fullscreen", inst.$lightbox);
                     inst.$prev = $(".html5-prev-fullscreen", inst.$lightbox);
 					$(".html5-next-fullscreen,.html5-prev-fullscreen").css('position','fixed');
@@ -429,8 +430,9 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     inst.$prevbottom.click(function() {
                         inst.prevArrowClicked()
                     });
-                    inst.$lightbox.append("<div id='html5-close-fullscreen' style='display:block;cursor:pointer;position:absolute;top:0;right:0;margin-top:0;margin-right:0;'><img src='" + inst.options.skinsfolder + inst.options.fullscreencloseimage + "'></div>");
-                    inst.$close = $("#html5-close-fullscreen", inst.$lightbox)
+                    inst.$lightbox.append("<div id='html5-close-fullscreen' style='display:block;cursor:pointer;position:absolute;top:20px;right:20px;margin-top:0;margin-right:0;'><img src='" + inst.options.skinsfolder + inst.options.fullscreencloseimage + "'></div>");
+                    inst.$close = $("#html5-close-fullscreen", inst.$lightbox);
+					isFisrtShow=false;
                 } else {
                     inst.$elemWrap.append("<div id='html5-next' style='display:none;cursor:pointer;position:absolute;right:" + inst.options.bordersize + "px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.nextimage + "'></div>" + "<div id='html5-prev' style='display:none;cursor:pointer;position:absolute;left:" + inst.options.bordersize + "px;top:50%;margin-top:-16px;'><img src='" + inst.options.skinsfolder + inst.options.previmage + "'></div>");
                     inst.$next = $("#html5-next", inst.$lightbox);
@@ -1266,7 +1268,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     var divID = elem[ELEM_HREF];
 					youkuPlayer = new YKU.Player('html5lightbox-div',{
 						styleid: '0',
-						client_id: '876cd40a21540f7f',
+						client_id: youku_client_id,
 						vid: elem[ELEM_HREF],
 						newPlayer: true
 					})
@@ -1292,6 +1294,12 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                 false);
                 dataW = sizeObj.w;
                 dataH = sizeObj.h;
+				if((dataW/dataH)<(16/9)){
+					//console.log(169);
+					}
+					else{
+						dataW=dataH/9*16;
+						}
                 inst.resizeLightbox(dataW, dataH, true,
                 function() {
                     inst.$loading.hide();

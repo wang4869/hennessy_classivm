@@ -30,10 +30,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-            	<li><a class="centerA" href="index.html">发现新点</a></li>
+                <li><a class="centerA" href="index.html">发现新点</a></li>
                 <li><a class="centerA" href="brand.html">闯出新点</a></li>
                 <li><a class="centerA" href="event.html">玩出新点</a></li>
-                <li><a class="centerA" href="party.html">派对大师</a></li>
+                <li class="active"><a class="centerA" href="party.html">派对大师</a></li>
                 <li><a class="centerA" href="drink.html">新点炫饮</a></li>
                 <li><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
@@ -54,31 +54,32 @@
 </nav>
 <!--nav end-->
 
-<!--article start-->
-<div class="articleBlock">
-    <div class="container">
-    	<div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(1);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br>
-                一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
-        </div>
-        <div class=" col-sm-8 col-sm-offset-2 col-xs-12  articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(2);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
-        </div>
-        <div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleLine">
-        	<a href="javascript:void(0);" onClick="showArticleDetail(3);">
-            	<h2>新点炫饮</h2>
-                <p>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！</p>
-            </a>
+<!--scroll kv start-->
+<div class="staticKv">
+    <div class="container" style="width:100%; max-width:1920px;">
+    	<div class="innerDiv">
+        	<ul class="bxslider">
+                <li>
+                	<a href="#"><img src="images/party/black.png"></a>
+                    <div class="partyKvLine pcShow">
+                        <img src="images/crm/qc.png" class="qc"><p class="partyKvTxt">「PARTY MASTER派对大师」是轩尼诗新点为爱混派对的先锋潮人打造的派对神器，它将带你打破所有套路，玩出最新奇有趣的潮流派对！<br>码上闯入最好玩的派对现场！</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="partyKvQc mobileShow">
+            	<img src="images/crm/qc.png" class="qc"><p class="partyKvTxt">「PARTY MASTER派对大师」<br class="mobileShow">是轩尼诗新点为爱混派对的先锋潮人打<br class="mobileShow">造的派对<br class="pcShow">神器，它将带你打破所有套<br class="mobileShow">路，玩出最新奇有趣的潮流派对！<br>码上闯入最好玩的派对现场！</p>
+            </div>
         </div>
     </div>
 </div>
-<!--article end-->
+<!--static kv end-->
+
+<!--party start-->
+<div class="partyBlock">
+    <div class="container">
+    </div>
+</div>
+<!--party end-->
 
 <!--foot start-->
 <footer class="foot1">
@@ -155,12 +156,12 @@
 </footer>
 <!--foot end-->
 
-<!--article detail start-->
-<div class="articleDetail" style="display:none;">
-    <div class=" col-sm-8 col-sm-offset-2 col-xs-12 articleContent"></div>
-    <a href="javascript:void(0);" class="popCloseBtn" onClick="closeArticleDetail();"><img src="images/btnClose.png"></a>
+<!--youku video start-->
+<div class="videoPop" style="display:none;">
+	<div class="videoYouku" id="videoYouku"></div>
+	<a href="javascript:void(0);" class="popCloseBtn" onClick="closeSingleVideo();"><img src="images/btnClose.png"></a>
 </div>
-<!--article detail end-->
+<!--youku video end-->
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.touchSwipe.min.js"></script>
@@ -171,30 +172,22 @@
 <script src="js/common.js"></script>
 
 <script>
-var isAdScroll=false;
-function showArticleDetail(aid){//aid 数据库文章编号
-	//更具aid 请求文章内容
-	$('.articleContent').height(wHeight-140);
-	var aDetail="<h1>新点炫饮"+aid+"</h1><br>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br><img src='images/footImg1.png' width='60%'><br><br>一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！一扇小绿门，就这样推开闯进去会到哪里？白天，通过绿门，一个新潮便利店尽在眼前，所有狂欢用品在这都买的到；夜晚，推开绿门就是新潮派对。带着一颗爱玩的心，新点小绿瓶在手，随时随地都可以趴踢！<br><br><img src='images/footImg1.png' width='60%'>";
-	
-	if(!isAdScroll){
-		isAdScroll=true;
-		$('.articleContent').append(aDetail);
-		$('.articleDetail').show();
-		$(".articleContent").mCustomScrollbar({
-			setHeight:wHeight-140,
-			theme:"inset-3-dark"
-			});
-		}
-		else{
-			$('.mCSB_container').html('');
-			$('.mCSB_container').append(aDetail);
-			$('.articleDetail').show();
-			}
-	}
-
 //单页加载完毕
 $(document).ready(function(){
+	if($('.bxslider li').length==1){
+		$('.bxslider').bxSlider({
+			auto: false,
+			infiniteLoop:false,
+			responsive:true
+			});
+		$('.bx-controls').hide();
+		}
+		else{
+			$('.bxslider').bxSlider({
+				auto: true,
+				responsive:true
+				});
+			}
 	});
 //单页窗口大小改变
 $(window).resize(function(){

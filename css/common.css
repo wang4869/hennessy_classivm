@@ -9,7 +9,7 @@ url('../fonts/din condensed bold.ttf') format('truetype'),
 url('../fonts/din condensed bold.svg#din regular') format('svg'); 
 }
 
-body{margin:0; padding:50px 0 0 0;text-align:left; font-size:12px; font-family:'Microsoft YaHei',Arial; background:#262324;}
+body{margin:0; padding:50px 0 0 0;text-align:left; font-size:12px; font-family:'Microsoft YaHei','SimHei',Arial; background:#262324;}
 table{border-collapse:collapse;}
 td,th{padding:0;}
 ul,li,dd,dl,dt{margin:0; padding:0; list-style:none; word-break:break-all;}
@@ -32,7 +32,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 .navbar-inverse{ border:none;}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ background:#262324;}
 .navbar-brand{ padding:13px 23px; background:#00ff50;}
-.nav.navbar-right > li.navIcon{ background:url(../images/navIcon.png) 0 0 no-repeat; width:16px; height:15px; padding:0; margin:20px 10px 0 10px;}
+.navbar-brand img{ width:94px;}
+.nav.navbar-right > li.navIcon{ background:url(../images/navIcon.png) 0 0 no-repeat; background-size:133px 15px; width:16px; height:15px; padding:0; margin:20px 10px 0 10px;}
 .nav.navbar-right > li.navIcon1{ background-position:0 0;}
 .nav.navbar-right > li.navIcon2{ background-position:-42px 0; width:18px;}
 .nav.navbar-right > li.navIcon3{ background-position:-82px 0;}
@@ -49,10 +50,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 /*index kv*/
 .jumbotron{ background:url(../images/index/kvBg.png) center top no-repeat; background-size:auto 100%;}
 .kvEf{ background:url(../images/index/kvTxt.png) 0 0 no-repeat; width:326px; height:205px; left:20%; top:30%;}
-.kvVideo{ font-size:22px; color:#FFF; left:130px; top:180px; width:230px;}
+.kvVideo{ font-size:22px; color:#FFF; left:150px; top:180px; width:230px;}
 .kvVideo img{ vertical-align:-12px; margin-left:10px;}
 .kvVideo:hover,.kvVideo:focus{ text-decoration:none; color:#FFF;}
-.downNote{ background:url(../images/downIcon.png) 0 0 no-repeat; width:40px; height:14px; left:50%; bottom:30px; margin-left:-20px; -webkit-animation:downNote 0.8s 0s linear infinite; -moz-animation:downNote 0.8s 0s linear infinite; animation:downNote 0.8s 0s linear infinite;}
+.downNote{ background:url(../images/downIcon.png) 0 0 no-repeat; width:40px; height:14px; left:50%; bottom:30px; margin-left:-20px; -webkit-animation:downNote 1.5s 0s linear infinite; -moz-animation:downNote 1.5s 0s linear infinite; animation:downNote 1.5s 0s linear infinite;}
 @-webkit-keyframes downNote{
 0%{ -webkit-transform:translate(0,0);}
 40%{ -webkit-transform:translate(0,20px);}
@@ -70,34 +71,39 @@ select,input,textarea{font-family:inherit; outline:none;}
 }
 
 /*index main*/
-.indexBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:150px; overflow:hidden;}
+.indexBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:130px; overflow:hidden;}
 .indexVideo{ padding:100px 0; color:#FFF;}
-.topTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:220px; padding:0 0 50px 15px; line-height:42px; color:#FFF; font-size:42px; line-height:44px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei';}
+.topTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:220px; padding:0 0 50px 15px; line-height:42px; color:#FFF; font-size:42px; line-height:44px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
 .topEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0;}
-.subContext{ font-family:DIN,'Microsoft YaHei';}
-.topContext{ padding:30px 0 0 0; text-align:center; color:#FFF; font-size:14px; line-height:34px;}
+.subContext{ font-family:DIN,'Microsoft YaHei','SimHei';}
+.topContext{ padding:30px 0 0 0; text-align:center; color:#FFF; font-size:14px; line-height:34px; font-family:DIN,'Microsoft YaHei','SimHei';}
 .qLeft{ left:20%; bottom:5px;}
 .qRight{ right:20%; bottom:5px;}
 
 .topVideo{ width:100%; background:#727170; border:6px solid #141213; margin-top:40px;}
+.tvPlayBtn{ left:50%; top:50%; margin:-20px 0 0 -20px;}
 
 .indexLine1,.indexLine2{ position:relative;}
 .indexLine2{ margin-top:110px;}
 .indexLine1left,.indexLine2left{ border-left:20px solid #00ff50; background:#262324; padding:140px 0 200px 0; margin-bottom:100px; transform:translate(0,100px);}
 .subContext{ width:100%; text-align:center; color:#FFF; font-size:14px; line-height:36px; padding-top:40px;}
-.indexLine1Right{ position:absolute; left:50%; top:-100px;}
+.indexLine1Right{ position:absolute; left:50%; top:100px/*60px*/;}
 .lineBlock1{ border:15px solid #FFF; width:230px; height:230px; position:absolute; left:10%; top:-5%;}
-.indexLine2Right{ position:absolute; left:50%; top:50px;}
+.indexLine2Right{ position:absolute; left:50%; top:300px/*150px*/;}
 .indexLine2Right img{ position:absolute; left:0; top:0;}
 .lineBlock2{ border:15px solid #00ff50; background:#F0F0F0; width:230px; height:230px; position:absolute; right:20%; top:-40px;}
 .needShowa{ transition:all 1s 0s linear; -webkit-transition:all 1s 0s linear; -moz-transition:all 1s 0s linear;}
 .needShowb{ transition:all 1s 1.2s linear; -webkit-transition:all 1s 1.2s linear; -moz-transition:all 1s 1.2s linear;}
 .anmBlock{ transition:all 1s 0s ease-out; -webkit-transition:all 1s 0s ease-out; -moz-transition:all 1s 0s ease-out;}
+.anmBlock2{ transition:all 0.7s 0s ease-out; -webkit-transition:all 0.7s 0s ease-out; -moz-transition:all 0.7s 0s ease-out;}
 .indexLine1Bottom,.indexLine2Bottom{ position:absolute; left:0; bottom:0; width:100%;}
 .indexLine2BottomMore{ font-size:16px; color:#FFF; height:30px; line-height:30px; position:absolute; left:0; top:50%; margin-top:-15px; width:100%; text-align:center;}
 .indexLine2BottomMore img{ margin-left:10px; vertical-align:-5px;}
 .vCover{ background:rgba(0,255,80,0.8); position:absolute; left:0; top:0; width:100%; height:100%; opacity:0;}
 .vCover img{ position:absolute; left:50%; top:50%; margin:-20px 0 0 -20px;}
+.cBgImg{ position:absolute; left:0; top:0; transform-origin:50% 50% 0; -moz-transform-origin:50% 50% 0; -webkit-transform-origin:50% 50% 0; -ms-transform-origin:50% 50% 0; transition:all 0.5s 0s ease-out; -webkit-transition:all 0.5s 0s ease-out; -moz-transition:all 0.5s 0s ease-out; -ms-transition:all 0.5s 0s ease-out; transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -webkit-transform:scale(1);}
+.lGallery:hover .cBgImg{ transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -webkit-transform:scale(1.2);}
+.indexLineBottom .innerDiv{ overflow:hidden;}
 
 /*footer*/
 .foot1{ background:#262324; padding-top:40px; padding-bottom:85px; border-bottom:5px solid #00ff50;}
@@ -111,6 +117,21 @@ select,input,textarea{font-family:inherit; outline:none;}
 .fcbLink{ padding-top:20px;}
 .fcbBtn1{ display:inline-block; padding:8px 50px 10px 10px; color:#000; border:2px solid #00ff50; font-weight:bold; background:url(../images/footBtnArrow.png) 70px 8px no-repeat; float:left;}
 .fcbBtn2{ float:right; display:inline-block; padding-top:6px;}
+.fc1{-webkit-animation:fc1 0.7s 0s linear both; -moz-animation:fc1 0.7s 0s linear both; animation:fc1 0.7s 0s linear both;}
+.fc2{-webkit-animation:fc1 0.7s 0.7s linear both; -moz-animation:fc1 0.7s 0.7s linear both; animation:fc1 0.7s 0.7s linear both;}
+.fc3{-webkit-animation:fc1 0.7s 1.4s linear both; -moz-animation:fc1 0.7s 1.4s linear both; animation:fc1 0.7s 1.4s linear both;}
+@-webkit-keyframes fc1{
+0%{ -webkit-transform:translate(0,30px);}
+100%{ -webkit-transform:translate(0,0);}
+}
+@-moz-keyframes fc1{
+0%{ -moz-transform:translate(0,30px);}
+100%{ -moz-transform:translate(0,0);}
+}
+@keyframes fc1{
+0%{ transform:translate(0,30px);}
+100%{ transform:translate(0,0);}
+}
 
 .foot2{ background:#000; padding:50px 0 40px 0;}
 .footQc{ text-align:center; width:170px; margin:0 auto;}
@@ -126,9 +147,13 @@ select,input,textarea{font-family:inherit; outline:none;}
 .footNav span.fnActive{ background:#00ff50;}
 
 /*pop img video*/
-.videoPop{ position:fixed; left:0; top:0; z-index:1040; width:100%; height:100%; display:none;}
+.videoPop{ position:fixed; left:0; top:0; z-index:1040; width:100%; height:100%; display:none; background:rgba(0,0,0,0.9);}
+.videoYouku{ width:100%; height:100%;}
 .popCloseBtn{ position:fixed; top:0; right:0; color:#FFF; font-size:20px; z-index:1050;}
 .html5-nav-mask,#html5-watermark,.html5boxVideoControls{ display:none;}
+
+.bxslider li a{ width:100%; display:inline-block;}
+.bxslider li a img{ width:100%;}
 
 /*article*/
 .articleBlock .container{ background:url(../images/article/articleBg.jpg) center bottom no-repeat #f0f0f0; background-size:100% auto; padding-bottom:300px; padding-top:30px; overflow:hidden;}
@@ -144,6 +169,85 @@ select,input,textarea{font-family:inherit; outline:none;}
 .articleContent a{ color:#FFF;}
 .articleContent h1{ text-align:center; font-size:30px;}
 
+.popArticle{ color:#FFF; padding:25px;}
+
+/*brand*/
+.bkLogo{ top:5.5710306406685%; right:7.0422535211268%; width:9.6774193548387%;}
+.bkBottle{ bottom:0; right:6.6901408450704%; width:10.4838709677419%;}
+.brandBlock .container{ background:url(../images/brand/bg.png) center top no-repeat; background-size:100% 100%; padding-bottom:130px; overflow:hidden;}
+.brandLine{ padding-bottom:100px;}
+.brandLineLeft{ background:url(../images/brand/infoBg.jpg) top center no-repeat #262324; background-size:100% 100%;}
+.brandLineRight{ position:absolute; left:50%; top:-50px; background:#262324; border-left:20px solid #00ff50; padding:90px 0;}
+.brandTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 50px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.brandTitleEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0;}
+.brandContext{ width:290px; margin:0 auto; color:#FFF; font-size:14px; line-height:36px; padding:40px 0 0 15px;}
+.brandBuyLink{ width:290px; padding:40px 0 0 15px; margin:0 auto; color:#00ff50; font-size:14px;}
+.brandBuyLink a{ color:#00ff50; margin-left:20px;}
+.brandBuyLink a:first-child{ margin-left:35px;}
+.brandBuyLink a img{ vertical-align:-10px;}
+.brandLineLeftContent{width:100%;}
+.brandLineLeftContent .brandTitle{ width:55%; padding-top:90px; margin:0; margin-left:5%;}
+.brandLineLeftContent .brandContext{ width:55%; margin:0; margin-left:5%;}
+.brandLineLeftContent .brandBuyBtn{ width:55%; padding:40px 0 90px 15px; margin:0; margin-left:5%;}
+.brandBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #00ff50; font-weight:bold; background:url(../images/footBtnArrow.png) 70px 8px no-repeat;}
+.bitTxt{ font-size:42px; line-height:48px; color:#FFF; text-align:center; position:absolute; left:0; top:45%; width:100%; text-shadow:2px 2px 3px rgba(0,0,0,0.73); letter-spacing:5px;}
+.biTop{ padding-bottom:500px;}
+.biBottom{ position:absolute; left:0; top:0;}
+.bibLeft{ width:48%; float:left; margin-top:45%;}
+.bibRight{ width:48%; float:right; margin-top:50%;}
+.bibTxt{ font-size:28px; line-height:110%; color:#FFF; position:absolute; left:10%; top:30%; text-shadow: 2px 2px 15px rgba(0,0,0,0.77);}
+.bibTxt span{ font-size:24px; font-family:DIN,'Microsoft YaHei','SimHei';}
+.bibBottom{ border-left:20px solid #00ff50; background:#FFF; font-size:14px; color:#262324; letter-spacing:3px; line-height:36px; padding:30px 40px 30px 30px;}
+
+/*event*/
+.eventBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:150px; overflow:hidden;}
+.eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:350px; padding:0 0 50px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.eventTitleEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0;}
+.eventLine1,.eventLine2{ position:relative;}
+.eventLine2{ margin-top:200px;}
+.eventLine1left,.eventLine2left{ border-left:20px solid #00ff50; background:#262324; padding:140px 0 200px 0; margin-bottom:100px; transform:translate(0,100px);}
+.eventLine1Right{ position:absolute; left:50%; top:340px/*200px*/;}
+.eventLine1Right img{ position:absolute; left:0; top:0;}
+.eventLine2Right{ position:absolute; left:50%; top:400px/*250px*/;}
+.eventLine1Bottom,.eventLine2Bottom{ position:absolute; left:0; top:600px; width:100%;}
+.eventLine2BottomMore{ font-size:16px; color:#FFF; height:30px; line-height:30px; position:absolute; left:0; top:50%; margin-top:-15px; width:100%; text-align:center;}
+.eventLine2BottomMore img{ margin-left:10px; vertical-align:-5px;}
+.eventLineBottom .innerDiv{ overflow:hidden;}
+
+/*crm*/
+.crmLogoLine{ position:absolute; left:0; top:29%; text-align:center; width:100%;}
+.crmKvLine{ text-align:center; position:absolute; left:50%; top:39%; width:600px; margin:0 0 0 -300px;}
+.crmKvLine img.qc{ margin-right:50px; float:left;}
+.crmKvTxt{ padding:10px 0 0 0; font-size:14px; color:#FFF; letter-spacing:3px; line-height:36px; text-align:left;}
+
+/*party*/
+.partyKvLine{ text-align:center; padding-top:50px; width:750px; position:absolute; left:50%; margin-left:-375px; top:20%;}
+.bx-wrapper img.qc{ margin-right:20px; float:left; width:auto;}
+.partyKvTxt{ padding:25px 0 0 0; font-size:14px; color:#FFF; letter-spacing:3px; line-height:36px; text-align:left;}
+
+/*drink*/
+.drinkTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; position:absolute; top:40%; left:50%; margin-left:-175px; width:350px; padding:0 0 50px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; font-family:DIN,'Microsoft YaHei','SimHei';}
+.drinkEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0;}
+.drinkNavOuter{ position:relative; width:100%; height:370px;}
+.drinkNav{ position:absolute; left:0; top:-70px; width:100%;}
+.dnOuter{ background:#262324; border-top:20px solid #00ff50; padding:40px 0;}
+.dnCol{ padding:0 0 0 60px;}
+.dnCol .dnColTitle{ font-size:18px; color:#00ff50; letter-spacing:3.85px; padding-bottom:20px;}
+.dnCol li{ padding-bottom:20px;}
+.dnCol li a{ font-size:14px; color:#FFFFFF; letter-spacing:3px;}
+.dnColHaveBorder{ border-left:1px solid #00ff50; border-right:1px solid #00ff50;}
+
+.drinkBlock .container.hasBg{ background:url(../images/drink/bg.jpg) center top no-repeat; background-size:100% 100%;}
+.drinkLine{ padding-bottom:100px;}
+.drinkLineLeft{ background:#262324; padding-bottom:70px;}
+.drinkLineRight{ position:absolute; left:50%; top:100px; background:#262324; border-left:20px solid #00ff50; padding:0;}
+.drinkSubTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 50px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.drinkSubEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0;}
+.drinkContext{ width:290px; margin:0 auto; color:#FFF; font-size:14px; line-height:36px; padding:40px 0 0 15px;}
+.drinkLineLeftContent .drinkSubTitle{ width:75%; padding-top:70px; margin:0; margin-left:10%;}
+.drinkLineLeftContent .drinkContext{ width:75%; margin:0; margin-left:10%;}
+.greenFont{ color:#00ff50;}
+
 /*970*/
 @media (max-width: 992px) {
 	.kvEf{ top:30%;}
@@ -152,11 +256,20 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.qRight{ right:15%; width:40px;}
 	
 	.lineBlock1{left:5%;}
+	.brandLineLeftContent .brandTitle{ width:280px; margin:0 auto;}
+	.brandLineLeftContent .brandContext{ width:280px; margin:0 auto;}
+	.brandLineLeftContent .brandBuyBtn{ width:280px; margin:0 auto;}
+	
+	.partyKvLine{ top:15%;}
+	
+	.drinkNav{ top:0;}
+	.drinkBlock .container{ background-position:center 0;}
 	}
 
 /*767*/
 @media (max-width: 767px) {
 	.indexBlock .container{ background-image:url(../images/index/indexBg_m.jpg);}
+	.kvVideo{ left:45px; top:200px;}
 	
 	.snsLine{ display:block;}
 	
@@ -174,6 +287,44 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.indexLine2Right{ position:static; left:auto; top:auto;}
 	.indexLine1Bottom{ position:static; left:auto; bottom:auto;}
 	.indexLine2Bottom{ position:static; left:auto; bottom:auto;}
+	
+	.brandLineRight{ position:static;}
+	.brandLine{ padding-bottom:0;}
+	.brandInfo{ padding-top:80px;}
+	.biBottom{ position:static;}
+	.bibLeft{ width:100%; float:none; margin-top:30px;}
+	.bibRight{ width:100%; float:none; margin-top:30px;}
+	.biTop{ padding-bottom:0;}
+	.topContext{ padding-left:30px; padding-right:30px;}
+	.brandBlock .container{ background-image:url(../images/brand/bg_m.jpg);}
+	
+	.eventBlock .container{ background-image:url(../images/event/eventBg_m.jpg);}
+	.eventLine1left,.eventLine2left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
+	.eventLine1Right{ position:static; left:auto; top:auto;}
+	.eventLine2Right img{ position:static; left:auto; top:auto;}
+	.eventLine2Right{ position:static; left:auto; top:auto;}
+	.eventLine1Bottom{ position:static; left:auto; bottom:auto;}
+	.eventLine2Bottom{ position:static; left:auto; bottom:auto;}
+	.bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto {bottom:-30px;}
+	
+	.crmKv .container{ height:auto; background:#262324;}
+	.crmKvLine{padding-top:50px; width:100%; position:static; left:auto; top:auto; margin-left:0;}
+	.crmKvLine img.qc{ margin-right:0; float:none;}
+	.crmKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
+	
+	.partyKvQc{padding-top:80px; width:100%; text-align:center;}
+	.partyKvLine img.qc{ margin-right:0; float:none;}
+	.partyKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
+	
+	.drinkNavOuter{ height:auto;}
+	.drinkNav{ position:static;}
+	.dnOuter{ border:none; padding:0;}
+	.dnTop{ background:url(../images/drink/drinkIcon2.png) 85% 18px no-repeat #00ff50; font-family:"DIN","Microsof YaHei",'SimHei',Arial; height:50px; padding-left:25px; color:#262324; letter-spacing:2px; font-size:24px; line-height:60px; overflow:hidden; float:none;}
+	.dnTop img{ vertical-align:-1px;}
+	.dnCol{ padding:35px 0 20px 75px; border:none; border-bottom:1px solid #00ff50;}
+	.dnCol ul{ overflow:hidden;}
+	.drinkIcon3{ transform-origin:50% 50% 0; -moz-transform-origin:50% 50% 0; -ms-transform-origin:50% 50% 0; -webkit-transform-origin:50% 50% 0;}
+	.drinkLineRight{ position:static;}
 	
 	.footContent{ margin:0; width:33.333333%;}
 	.fcBottom{ padding:30px 5% 30px 5%;}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>新点</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+<!--nav start-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <img src="images/navClose.png" class="navClose" style="display:none;">
+            </button>
+            <div class="navbar-brand"><img src="images/navLogo.png"></div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="centerA" href="index.html">发现新点</a></li>
+                <li><a class="centerA" href="brand.html">闯出新点</a></li>
+                <li><a class="centerA" href="event.html">玩出新点</a></li>
+                <li><a class="centerA" href="party.html">派对大师</a></li>
+                <li class="active"><a class="centerA" href="drink.html">新点炫饮</a></li>
+                <li><a class="centerA" href="crm.html">会员中心</a></li>
+                <div class="snsLine">
+                	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon3.png"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon4.png"></a>
+                </div>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navIcon navIcon1"><a href="#"></a></li>
+                <li class="navIcon navIcon2"><a href="#"></a></li>
+                <li class="navIcon navIcon3"><a href="#"></a></li>
+                <li class="navIcon navIcon4"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--nav end-->
+
+<!--drink kv start-->
+<div class="drinkKv">
+	<div class="container" style="width:100%; max-width:1920px;">
+    	<div class="col-xs-12">
+        	<div class="innerDiv">
+            	<img src="images/drink/kv.png" width="100%" style="display:block;">
+                <div class="drinkTitle">
+                    <div class="drinkEnTitle">LONG<br>DRINKS</div>
+                    新点炫饮
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--drink kv end-->
+
+<!--drink start-->
+<div class="drinkBlock">
+    <div class="container hasBg">
+    
+<!--drink nav start-->
+<div class="drinkNavOuter">
+    <div class="drinkNav">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 dnOuter">
+            	<div class="col-xs-12 mobileShow dnTop">
+                	<img src="images/drink/drinkIcon1.png"> REGULAR
+                </div>
+                <div class="col-sm-4 dnCol">
+                	<div class="dnColTitle" onClick="showThisDirks(this);">清新脱俗基本款 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:void(0);" at="#d1">国民老干部</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d2">行走的荷尔蒙</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d3">大潮咖</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 dnCol dnColHaveBorder">
+                    <div class="dnColTitle" onClick="showThisDirks(this);">气场全开进阶版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:void(0);" at="#d4">霸道总裁</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d5">颜值担当</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d6">女王大人</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d7">文艺范儿</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d8">国民初恋</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d9">21岁小鲜肉</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 dnCol">
+                    <div class="dnColTitle" onClick="showThisDirks(this);">创意巅峰终极版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:void(0);" at="#d10">温柔大魔王</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" at="#d11">网红界清流</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--drink nav end-->
+
+        <div class="drinkLine drinkLine1">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine1left drinkLine1Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d1">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            国民老干部
+                        </div>
+                        <div class="drinkContext">一本正经气质佳，有颜有型有才华<br>
+                        <font class="greenFont">【新点×乌龙茶】</font>敬始终秉持老干部优良作风的你<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入40亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入160亳升乌龙茶</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine1Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d1.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine2">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine2Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d2">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            行走的荷尔蒙
+                        </div>
+                        <div class="drinkContext">出场自带主角光环和背景音乐，浑身散发着迷<br>
+                        人的荷尔蒙一杯<font class="greenFont">【新点×脉动】</font>，让你的魅力<br>
+                        指数猛增10万个点<br><br>
+                        
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入40亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入160亳升脉动</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine2Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d2.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine3">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine3Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d3">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            大潮咖
+                        </div>
+                        <div class="drinkContext">街头在流行什么，全潮你看<br>
+                        听说<font class="greenFont">【新点×雪碧】</font>和大潮咖更配哦~<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入40亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入160亳升雪碧</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine3Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d3.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine4">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine4Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d4">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            霸道总裁
+                        </div>
+                        <div class="drinkContext">邪魅狂狷笑，腹黑高冷范儿<br>
+                        喝下一杯<font class="greenFont">【新点×干姜】</font>，将你心爱的妹子<br>
+                        壁咚在墙角<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入60亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入120毫升干姜水<br>
+                        <font class="greenFont">●</font> 加入15毫升青柠檬汁<br>
+                        <font class="greenFont">●</font> 配上香茅及薄荷叶作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine4Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d4.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine5">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine5Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d5">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            颜值担当
+                        </div>
+                        <div class="drinkContext">你造吗？你美得这么任性，气质还这么好是<br>
+                        犯规的！看脸的世界里，<font class="greenFont">【新点苹果×苏<br>
+                        打】</font>最配你！<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入50亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入90亳升苹果汁<br>
+                        <font class="greenFont">●</font> 用苏打水加满杯子<br>
+                        <font class="greenFont">●</font> 配上干燥花果块作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine5Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d5.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine6">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine6Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d6">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            女王大人
+                        </div>
+                        <div class="drinkContext">别低头，王冠会掉。别流泪，坏人会笑<br>
+                        举杯<font class="greenFont">【新点蔓越莓×汤力】</font>，祝贺气场一米八<br>
+                        的你加冕为女王<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入40亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入40亳升小红莓汁<br>
+                        <font class="greenFont">●</font> 加入120亳升汤力水<br>
+                        <font class="greenFont">●</font> 配上青柠檬片作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine6Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d6.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine7">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine7Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d7">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            文艺范儿
+                        </div>
+                        <div class="drinkContext">安静却不唯唯诺诺，聪明却不咄咄逼人<br>
+                        清新恬淡的<font class="greenFont">【新点×西柚】</font>，会为你带来<br>一丝小确幸<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入60亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入10亳升青柠檬汁<br>
+                        <font class="greenFont">●</font> 加入40亳升西柚汁<br>
+                        <font class="greenFont">●</font> 配上薄荷叶及黄菊作装饰
+
+                        
+                        调配方法：<br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入40亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入160亳升脉动</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine7Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d7.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine8">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine8Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d8">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            国民初恋
+                        </div>
+                        <div class="drinkContext">清纯甜美如你，走入别人心目中最美好的青春记忆<br>
+                        一杯<font class="greenFont">【新点×蜜橙】</font>，如初恋一般甜蜜<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入青柠檬块并捣烂<br>
+                        <font class="greenFont">●</font> 加入60亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入60亳升橙汁<br>
+                        <font class="greenFont">●</font> 加入2汤匙蜜糖<br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 配上薄荷叶及肉桂捧作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine8Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d8.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine9">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine9Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d9">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            21岁小鲜肉
+                        </div>
+                        <div class="drinkContext">大神微笑搭配苏炸天的摸头杀<br>
+                        少女心为你无限泛滥，无法克制一眼就爱上<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入薄荷叶<br>
+                        <font class="greenFont">●</font> 加入50亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入1汤匙蜜糖<br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入120ml乌龙茶<br>
+                        <font class="greenFont">●</font> 配上薄荷叶作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine9Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d9.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine10">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine10Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d10">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            温柔大魔王
+                        </div>
+                        <div class="drinkContext">所有人都以为你生性冷淡，其实你只对一个<br>
+                        人嘘寒问暖，温柔魔王，这种深情反差<br>
+                        谁hold得住<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入50亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入45亳升西柚汁<br>
+                        <font class="greenFont">●</font> 加入120亳升汤力水<br>
+                        <font class="greenFont">●</font> 加入10亳升青柠檬汁<br>
+                        <font class="greenFont">●</font> 配上西柚切片及罗勒叶作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine10Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d10.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="drinkLine drinkLine11">
+        	<div class="innerDiv">
+            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 drinkLineLeft drinkLine11Left anmBlock">
+                    <div class="drinkLineLeftContent needShowa" style="opacity:0;" id="d11">
+                    	<div class="drinkSubTitle">
+                            <div class="brandSubEnTitle"></div>
+                            网红界清流
+                        </div>
+                        <div class="drinkContext">好单纯好不做作，集颜值与才华于一身<br>
+                        喝一杯Classivm Bold, 继续当迷倒众生的段子手<br><br>
+                        <font class="greenFont">调配方法：</font><br>
+                        <font class="greenFont">●</font> 加入适量冰块<br>
+                        <font class="greenFont">●</font> 加入60亳升轩尼诗新点<br>
+                        <font class="greenFont">●</font> 加入30亳升青柠檬汁<br>
+                        <font class="greenFont">●</font> 加入20亳升苏打水<br>
+                        <font class="greenFont">●</font> 加入100毫升汤力水<br>
+                        <font class="greenFont">●</font> 配上玫瑰花瓣作装饰</div>
+					</div>
+                </div>
+                <div class=" col-md-4 col-sm-6 col-xs-12 drinkLineRight drinkLine11Right anmBlock">
+                	<div class="brandLineRightContent needShowb" style="opacity:0;">
+                    	<img src="images/drink/d11.png" width="100%">
+					</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--drink end-->
+
+<!--foot start-->
+<footer class="foot1">
+    <div class="container">
+        <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 footTop">
+            <div class="footTopContent anmBlock">
+                <div class="footMove">
+                    <div class="col-sm-4 col-xs-12 footContent">
+                        <div class="innerDiv"><a href="#1">
+                            <div class="fcTop"><img src="images/footImg1.png" width="100%"></div>
+                            <div class="fcBottom">
+                                <div class="fcbTitle">
+                                    <div class="fcbt1">深夜总是量产，微醺的手痒</div>
+                                    <div class="fcbt2">人人都是后现实魔幻浪漫主义印象派创作家......</div>
+                                </div>
+                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 footContent">
+                        <div class="innerDiv"><a href="#2">
+                            <div class="fcTop"><img src="images/footImg2.png" width="100%"></div>
+                            <div class="fcBottom">
+                                <div class="fcbTitle">
+                                    <div class="fcbt1">在穿越这件事儿上，最有发言权的都在这里</div>
+                                    <div class="fcbt2">迷恋穿越［绿］的人，想象力一定不会太差！</div>
+                                </div>
+                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 footContent">
+                        <div class="innerDiv"><a href="#3">
+                            <div class="fcTop"><img src="images/footImg3.png" width="100%"></div>
+                            <div class="fcBottom">
+                                <div class="fcbTitle">
+                                    <div class="fcbt1">为了小绿瓶！｜涂鸦活动开奖ing，人气王将登场</div>
+                                    <div class="fcbt2">愿创意与小绿瓶你们同在...</div>
+                                </div>
+                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footNav mobileShow"><span class="fnActive">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="foot2">
+    <div class="container">
+        <div class="footQc"><img src="images/footQc.png">
+            <div class="footQcTxt">关 注 轩 尼 诗 新 点 官 方 微 信</div>
+            <div class="footLogo"><img src="images/footLogo.png"></div>
+        </div>
+        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png"></a></div>
+        <div class="footLink"><a href="#">条款及条件</a><br class="mobileShow"><font class="pcShow">●</font><a href="#">隐私权政策</a><br class="mobileShow"><font class="pcShow">●</font><a href="#">请理性享用轩尼诗干邑</a><br class="mobileShow"><font class="pcShow">●</font><a href="#">访问轩尼诗全球官网</a>
+        </div>
+        <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow">沪ICP备10018200号</div>
+    </div>
+</footer>
+<!--foot end-->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/html5lightbox/html5lightbox.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+<script src="js/bxslider/jquery.bxslider.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+//单页加载完毕
+$(document).ready(function(){
+	drinkPos();
+	drinkNav();
+	drinkNavInit();
+	});
+//单页窗口大小改变
+$(window).resize(function(){
+	drinkPos();
+	drinkNavInit();
+	});
+//单页滚动
+$(window).scroll(function(){
+	drinkScorll();
+	});
+</script>
+
+</body>
