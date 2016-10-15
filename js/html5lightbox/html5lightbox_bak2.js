@@ -106,8 +106,8 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                 fullscreenprevimage: "btnPre.png",
                 videobgcolor: "#000",
                 html5videoposter: "",
-                showtitle: false,
-                titlestyle: "top",
+                showtitle: true,
+                titlestyle: "bottom",
                 titleinsidecss: "color:#fff; font-size:16px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;",
                 titlebottomcss: "color:#333; font-size:16px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;",
                 showdescription: true,
@@ -421,7 +421,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     inst.$next = $(".html5-next-fullscreen", inst.$lightbox);
                     inst.$prev = $(".html5-prev-fullscreen", inst.$lightbox);
 					$(".html5-next-fullscreen,.html5-prev-fullscreen").css('position','fixed');
-                    inst.$lightboxBox.append("<div class='html5-next-bottom-fullscreen' style='cursor:pointer;position:fixed;top:50%;right:0;margin-top:-20px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreennextimage + "'></div>" + "<div class='html5-prev-bottom-fullscreen' style='cursor:pointer;position:fixed;top:50%;left:0;margin-top:-20px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreenprevimage + "'></div>");
+                    inst.$lightboxBox.append("<div class='html5-next-bottom-fullscreen' style='cursor:pointer;position:fixed;top:40%;right:0;margin-top:8px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreennextimage + "'></div>" + "<div class='html5-prev-bottom-fullscreen' style='cursor:pointer;position:fixed;top:40%;left:0;margin-top:8px;'><img src='" + inst.options.skinsfolder + inst.options.fullscreenprevimage + "'></div>");
                     inst.$nextbottom = $(".html5-next-bottom-fullscreen", inst.$lightbox);
                     inst.$prevbottom = $(".html5-prev-bottom-fullscreen", inst.$lightbox);
                     inst.$nextbottom.click(function() {
@@ -1357,33 +1357,14 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     "height": boxH
                 });
                 else {
-					if(isMobile){
-						inst.$lightboxBox.css({
-							"width": wWidth,
-							"height": boxH/boxW*wWidth,
-							"left":0,
-							"top":'50%',
-							"margin":-boxH/boxW*wWidth/2+"px 0 0 0"
-						});
-						inst.$elemWrap.css({
-							"width": wWidth,
-							"height": boxH/boxW*wWidth
-						})
-						}
-						else{
-							inst.$lightboxBox.css({
-								"width": boxW/boxH*wHeight,
-								"height": wHeight,
-								"left":'50%',
-								"top":'0',
-								"margin":"0 0 0 "+boxW/boxH*wHeight/-2+"px",
-								"position":"absolute"
-							});
-							inst.$elemWrap.css({
-								"width": boxW/boxH*wHeight,
-								"height": wHeight
-							})
-							}
+                    inst.$lightboxBox.css({
+                        "width": boxW,
+                        "height": "auto"
+                    });
+                    inst.$elemWrap.css({
+                        "width": boxW,
+                        "height": boxH
+                    })
                 }
                 if (inst.options.titlestyle == "inside") inst.$elemData.css({
                     width: sizeObj.w + "px"
@@ -1468,39 +1449,11 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                         inst.$prev.fadeOut()
                     })
                 }
-                /*inst.$lightboxBox.css({
+                inst.$lightboxBox.css({
                     "margin-top": boxT
-                });*/
-				if(isMobile){
-						inst.$lightboxBox.css({
-							"width": wWidth,
-							"height": boxH/boxW*wWidth,
-							"left":0,
-							"top":'50%',
-							"margin":-boxH/boxW*wWidth/2+"px 0 0 0"
-						});
-						inst.$elemWrap.css({
-							"width": wWidth,
-							"height": boxH/boxW*wWidth
-						})
-						}
-						else{
-							inst.$lightboxBox.css({
-								"width": boxW/boxH*wHeight,
-								"height": wHeight,
-								"left":'50%',
-								"top":'0',
-								"margin":"0 0 0 "+boxW/boxH*wHeight/-2+"px",
-								"position":"absolute"
-							});
-							inst.$elemWrap.css({
-								"width": boxW/boxH*wHeight,
-								"height": wHeight
-							})
-							}
-				inst.onAnimateFinish(onFinish);
-                /*if (!inst.options.positionFixed) inst.$lightboxBox.css("margin-top", $(window).scrollTop() + inst.options.bordertopmargin);*/
-                /*if (inst.options.titlestyle == "left" || inst.options.titlestyle == "right") {
+                });
+                if (!inst.options.positionFixed) inst.$lightboxBox.css("margin-top", $(window).scrollTop() + inst.options.bordertopmargin);
+                if (inst.options.titlestyle == "left" || inst.options.titlestyle == "right") {
                     var speed = bAnimate ? inst.options.resizespeed: 0;
                     if (boxW == inst.$lightboxBox.width() && boxH == inst.$lightboxBox.height()) speed = 0;
                     inst.$lightboxBox.animate({
@@ -1530,7 +1483,7 @@ function loadHtml5LightBox(jsFolder) { (function($) {
                     function() {
                         inst.onAnimateFinish(onFinish)
                     })
-                }*/
+                }
             };
             inst.onAnimateFinish = function(onFinish) {
                 inst.$loading.show();

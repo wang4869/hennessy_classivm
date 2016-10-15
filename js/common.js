@@ -57,6 +57,8 @@ function getPos(){
 		$('.footTopContent').width(wWidth*fcpLen);
 		$('.footTopContent').css('transform','translateX('+(-fcpNumb*wWidth)+'px)');
 		
+		$('body').attr('style','');
+		
 		if(!isSwipe){
 			isSwipe=true;
 			$('.footTopContent').swipe( {
@@ -76,6 +78,19 @@ function getPos(){
 			$('.footTop').removeAttr('style');
 			$(".footTopContent").removeAttr('style');
 			$('.footNav span').removeClass('fnActive').eq(0).addClass('fnActive');
+			
+			if(wWidth>767){
+				if(wWidth%4==0){
+					$('body').attr('style','');
+					}
+					else{
+						var w4=wWidth%4;
+						$('body').width(wWidth-w4);
+						}
+				}
+				else{
+					$('body').attr('style','');
+					}
 			}
 	}
 	
@@ -138,9 +153,12 @@ function indexPos(){
 	if(wWidth/(wHeight-50)>=1.73){
 		$('.jumbotron').css('background-size','100% auto');
 		}
-		else{
-			$('.jumbotron').css('background-size','auto 100%');
+		else if(parseInt($('.jumbotron').width())>1240){
+			$('.jumbotron').css('background-size','100% auto');
 			}
+			else{
+				$('.jumbotron').css('background-size','auto 100%');
+				}
 		
 	//首页 内容块1 延时显示内容、缓动内容
 	nb1=parseInt($('.indexLine1 .needShowa').offset().top);
@@ -242,6 +260,16 @@ function brandPos(){
 	sb4=parseInt($('.brandLine4Left').offset().top)+200;
 	sbw4=parseInt($('.brandLine4Left').height());
 	sbh4=sb4+sbw4;
+	
+	//brand 内容块5 延时显示内容、缓动内容
+	sb5=parseInt($('.biTop').offset().top)+200;
+	sbw5=parseInt($('.biTop').height());
+	sbh5=sb5+sbw5;
+	
+	//brand 内容块6 延时显示内容、缓动内容
+	sb6=parseInt($('.bibLeft').offset().top)+200;
+	sbw6=parseInt($('.bibLeft').height());
+	sbh6=sb6+sbw6;
 	}
 	
 //Brand滚动事件
@@ -309,6 +337,28 @@ function brandScorll(){
 				var sy=(this_scrollTop2-sb4);
 				$('.brandLine4Left').css('transform','translate(0,'+(0-sy/10)+'px)');
 				$('.brandLine4Right').css('transform','translate(0,'+sy/8+'px)');
+				}
+			}
+			
+	if(wWidth<=767){
+		$('.biTop').css('transform','translate(0,0)');
+		}
+		else{
+			if(this_scrollTop2>sb5&&this_scrollTop2<(sbh5)){
+				var sy=(this_scrollTop2-sb5);
+				$('.biTop').css('transform','translate(0,'+(0-sy/10)+'px)');
+				}
+			}
+			
+	if(wWidth<=767){
+		$('.bibLeft').css('transform','translate(0,0)');
+		$('.bibRight').css('transform','translate(0,0');
+		}
+		else{
+			if(this_scrollTop2>sb6&&this_scrollTop2<(sbh6)){
+				var sy=(this_scrollTop2-sb6);
+				$('.bibLeft').css('transform','translate(0,'+(0-sy/15)+'px)');
+				$('.bibRight').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 	}
@@ -454,8 +504,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb1&&this_scrollTop2<(sbh1+wHeight)){
 				var sy=(this_scrollTop2-sb1);
-				$('.drinkLine1Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine1Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine1Left').css('transform','translate(0,0)');
+				$('.drinkLine1Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 		
@@ -469,8 +519,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb2&&this_scrollTop2<(sbh2+wHeight)){
 				var sy=(this_scrollTop2-sb2);
-				$('.drinkLine2Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine2Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine2Left').css('transform','translate(0,0)');
+				$('.drinkLine2Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -484,8 +534,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb3&&this_scrollTop2<(sbh3+wHeight)){
 				var sy=(this_scrollTop2-sb3);
-				$('.drinkLine3Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine3Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine3Left').css('transform','translate(0,0)');
+				$('.drinkLine3Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -499,8 +549,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb4&&this_scrollTop2<(sbh4+wHeight)){
 				var sy=(this_scrollTop2-sb4);
-				$('.drinkLine4Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine4Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine4Left').css('transform','translate(0,0)');
+				$('.drinkLine4Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -514,8 +564,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb5&&this_scrollTop2<(sbh5+wHeight)){
 				var sy=(this_scrollTop2-sb5);
-				$('.drinkLine5Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine5Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine5Left').css('transform','translate(0,0)');
+				$('.drinkLine5Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -529,8 +579,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb6&&this_scrollTop2<(sbh6+wHeight)){
 				var sy=(this_scrollTop2-sb6);
-				$('.drinkLine6Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine6Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine6Left').css('transform','translate(0,0)');
+				$('.drinkLine6Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -544,8 +594,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb7&&this_scrollTop2<(sbh7+wHeight)){
 				var sy=(this_scrollTop2-sb7);
-				$('.drinkLine7Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine7Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine7Left').css('transform','translate(0,0)');
+				$('.drinkLine7Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -559,8 +609,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb8&&this_scrollTop2<(sbh8+wHeight)){
 				var sy=(this_scrollTop2-sb8);
-				$('.drinkLine8Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine8Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine8Left').css('transform','translate(0,0)');
+				$('.drinkLine8Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -574,8 +624,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb9&&this_scrollTop2<(sbh9+wHeight)){
 				var sy=(this_scrollTop2-sb9);
-				$('.drinkLine9Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine9Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine9Left').css('transform','translate(0,0)');
+				$('.drinkLine9Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -589,8 +639,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb10&&this_scrollTop2<(sbh10+wHeight)){
 				var sy=(this_scrollTop2-sb10);
-				$('.drinkLine10Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine10Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine10Left').css('transform','translate(0,0)');
+				$('.drinkLine10Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 			
@@ -604,8 +654,8 @@ function drinkScorll(){
 		else{
 			if(this_scrollTop2>sb11&&this_scrollTop2<(sbh11+wHeight)){
 				var sy=(this_scrollTop2-sb11);
-				$('.drinkLine11Left').css('transform','translate(0,'+(50-sy/10)+'px)');
-				$('.drinkLine11Right').css('transform','translate(0,'+sy/8+'px)');
+				$('.drinkLine11Left').css('transform','translate(0,0)');
+				$('.drinkLine11Right').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
 	}
