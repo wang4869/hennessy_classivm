@@ -17,7 +17,7 @@
 
 <!--nav start-->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container" style="width:100%; max-width:1920px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -37,10 +37,10 @@
                 <li><a class="centerA" href="drink.html">新点炫饮</a></li>
                 <li><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
-                	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon3.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon4.png"></a>
+                	<a href="javascript:void(0);" onClick="showNavQc();"><img src="images/navIcon1.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon2.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon3.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon4.png" width="23"></a>
                 </div>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -51,17 +51,24 @@
             </ul>
         </div>
     </div>
+    
+    <div class="navQcBlock" style="display:none;">
+    	<div class="qcBg" onClick="closeNavQc();"></div>
+        <img src="images/navQc.png" width="147" height="140" class="navQc">
+        <a href="javascript:void(0);" class="navCloseBtn" onClick="closeNavQc();"><img src="images/navClose.png"></a>
+    </div>
 </nav>
 <!--nav end-->
 
 <!--brand kv start-->
 <div class="brandKv">
-	<div class="container" style="width:100%;">
-    	<div class="col-xs-12">
-        	<div class="innerDiv">
-            	<img src="images/brand/kv.png" width="100%" style="display:block;">
-                <img src="images/brand/logo.png" class="abs bkLogo">
-                <img src="images/brand/bottle.png" class="abs bkBottle">
+	<div class="container kvBg" style="width:100%; max-width:1920px;">
+    	<div class="container">
+        	<div class="col-xs-12">
+                <div class="innerDiv">
+                    <img src="images/brand/logo.png" class="abs bkLogo">
+                    <img src="images/brand/bottle.png" class="abs bkBottle">
+                </div>
             </div>
         </div>
     </div>
@@ -70,219 +77,228 @@
 
 <!--brand start-->
 <div class="brandBlock">
-    <div class="container">
-    	<div class="indexTop">
-            <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 indexVideo">
-                <div class="topTitle">
-                    <div class="topEnTitle"></div>
-                    发现新点
-                </div>
-                <div class="topContext">
-                    <div class="innerDiv">全球优质干邑酿造者—HENNESSY轩尼诗，1765年创立于法国。秉持着酿造全球优秀干邑的理念，轩尼诗<br class="pcShow">家族在传承经典的同时力求创新，精致呈现轩尼诗新点——谱合法国干邑地区“生命之水”的清新和<br class="pcShow">陈年的辛香活力，重新诠释轩尼诗长久秉承的经典，并置身于时尚潮流最前沿。<br><br>
-                    敢冲敢闯，打破传统；抛弃套路，闯出新路，这就是干邑潮牌轩尼诗新点。<br class="pcShow">用年轻潮流创意开启干邑新篇章，年轻就是要闯出新点。
+    <div class="container containerBg" style="width:100%; max-width:1920px;">
+    	<div class="container">
+            <div class="indexTop">
+                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 indexVideo txtTopBg">
+                    <div class="topTitle">
+                        <div class="topEnTitle"></div>
+                        发现新点
                     </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        
-        <div class="brandLine brandLine1">
-        	<div class="innerDiv">
-            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine1Left anmBlock">
-                    <img src="images/brand/b_70.png" width="100%" class="needShowa" style="opacity:0;">
-                </div>
-                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine1Right anmBlock">
-                	<div class="brandLineRightContent needShowb" style="opacity:0;">
-                    	<div class="brandTitle">
-                            <div class="brandEnTitle"></div>
-                            轩尼诗新点 70CL
-                        </div>
-                        <div class="brandContext">轩 尼 诗 新 点 70CL 口 感 层 次 丰 富，随 着 各 种 软 饮 的 兑 入 而 更 添 回 味，绝 对 是 混 搭 高 手。</div>
-                        <div class="brandBuyLink">
-                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
-                        </div>
-					</div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        
-        <div class="brandLine brandLine2">
-        	<div class="innerDiv">
-            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine2Left anmBlock">
-                    <img src="images/brand/b_20.png" width="100%" class="needShowa" style="opacity:0;">
-                </div>
-                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine2Right anmBlock">
-                	<div class="brandLineRightContent needShowb" style="opacity:0;">
-                    	<div class="brandTitle">
-                            <div class="brandEnTitle"></div>
-                            轩尼诗新点 20CL
-                        </div>
-                        <div class="brandContext">轩 尼 诗 新 点 20CL 小 绿 瓶 专 为 潮 客 们 而 设 计，荧 光 绿 的 瓶 身 彰 显 年 轻 个 性，小 巧 的 体 积 任 你 随 心 携 带，派对<br>ALL THE TIME！</div>
-                        <div class="brandBuyLink">
-                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
-                        </div>
-					</div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        
-        <div class="brandLine brandLine3">
-        	<div class="innerDiv">
-            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine3Left anmBlock">
-                    <img src="images/brand/b_150.png" width="100%" class="needShowa" style="opacity:0;">
-                </div>
-                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine3Right anmBlock">
-                	<div class="brandLineRightContent needShowb" style="opacity:0;">
-                    	<div class="brandTitle">
-                            <div class="brandEnTitle"></div>
-                            轩尼诗新点 150CL
-                        </div>
-                        <div class="brandContext">轩 尼 诗 新 点 150CL，馥 郁 辛 香 的 口 感 令 人 回 味 无 穷。派 对 霸 王 一 出 惊 艳 全 场，大 瓶 装 更 适 合 与 众 人 共 分 享，满 足 全 场 亲 朋 好 友。</div>
-                        <div class="brandBuyLink">
-                            立 即 购 买<a href="#"><img src="images/footIcon2.png"></a> <a href="#"><img src="images/footIcon3.png"></a>
-                        </div>
-					</div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        
-        <div class="brandLine brandLine4">
-        	<div class="innerDiv">
-            	<div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine4Left anmBlock">
-                    <div class="brandLineLeftContent needShowa" style="opacity:0;">
-                    	<div class="brandTitle">
-                            <div class="brandEnTitle"></div>
-                            乐享新点
-                        </div>
-                        <div class="brandContext">颜 色：深 赭 色<br>
-                        嗅 感：富 有 活 力 的 辛 香，带 些 许 薄 荷 气 息<br>
-                        口 感：胡 椒、鲜 捣 生 姜，带 着 淡 淡 薄 荷 味<br>
-                        饮 用：纯 饮、加 冰 块，或 混 合 作 为 炫 饮 鸡 尾 酒 也 非 常 合 适<br>
-                        建 议 搭 配：脉 动 (青 柠 口 味)、乌 龙 茶、雪 碧 等 各 种 软 饮</div>
-                        <div class="brandBuyBtn">
-                            <a href="javascript:void(0);" class="brandBtn">我 要 调 酒</a>
-                        </div>
-					</div>
-                </div>
-                <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine4Right anmBlock">
-                	<div class="brandLineRightContent needShowb" style="opacity:0;">
-                    	<div class="brandTitle">
-                            <div class="brandEnTitle"></div>
-                            了解新点
-                        </div>
-                        <div class="brandContext"><br>原 料：葡 萄、焦 糖 色<br>
-                        酒 精 度：40% vol<br>
-                        原 产 地：法 国<br>
-                        储 存 方 法：常 温 保 存，避 免 阳 光 直 射<br><br></div>
-					</div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        
-        <div class="brandLine brandInfo">
-            <div class="innerDiv">
-                <div class="col-md-8 col-md-offset-2 col-sm-12">
-                    <div class="biTop anmBlock">
-                        <div class="innerDiv">
-                            <img src="images/brand/infoTop.png" width="100%">
-                            <div class="bitTxt">干邑并非酿造<br>而是创造</div>
+                    <div class="topContext">
+                        <div class="innerDiv">全球优质干邑酿造者—HENNESSY轩尼诗，1765年创立于法国。秉持着酿造全球优秀干邑的理念，轩尼诗<br class="pcShow">家族在传承经典的同时力求创新，精致呈现轩尼诗新点——谱合法国干邑地区“生命之水”的清新和<br class="pcShow">陈年的辛香活力，重新诠释轩尼诗长久秉承的经典，并置身于时尚潮流最前沿。<br><br>
+                        敢冲敢闯，打破传统；抛弃套路，闯出新路，这就是干邑潮牌轩尼诗新点。<br class="pcShow">用年轻潮流创意开启干邑新篇章，年轻就是要闯出新点。
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-md-offset-2 col-sm-12 biBottom">
-                    <div class="bibLeft anmBlock2">
-                        <div class="bibTop">
-                            <div class="innerDiv">
-                                <img src="images/brand/info1.png" width="100%">
-                                <div class="bibTxt"><span>Cognac</span><br>干邑白兰地</div>
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="brandLine brandLine1">
+                <div class="innerDiv">
+                    <div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine1Left anmBlock">
+                        <img src="images/brand/b_70.png" width="100%" class="needShowa" style="opacity:0;">
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine1Right anmBlock">
+                        <div class="brandLineRightContent needShowb" style="opacity:0;">
+                            <div class="brandTitle">
+                                <div class="brandEnTitle"></div>
+                                轩尼诗新点 70CL
+                            </div>
+                            <div class="brandContext">轩尼诗新点70CL口感层次丰富，随着各种软饮的兑入而更添回味，绝对是混搭高手。</div>
+                            <div class="brandBuyLink">
+                                立 即 购 买<a href="#"><img src="images/footIcon2.png" width="36"></a> <a href="#"><img src="images/footIcon3.png" width="36"></a>
                             </div>
                         </div>
-                        <div class="bibBottom">
-                            酒精浓度高于40度的酒即被称为烈酒，通常所说的白兰地，主要是指以葡萄为原料、经蒸馏浓缩制成的烈酒。但是，不是所有的白兰地都能被称之为干邑，只有在法国干邑镇——全世界优质干邑产区——生产的白兰地，并经过干邑生产监管组织认证的白兰地才可以称作干邑。
-                        </div>
                     </div>
-                    
-                    <div class="bibRight anmBlock">
-                        <div class="bibTop">
-                            <div class="innerDiv">
-                                <img src="images/brand/info2.png" width="100%">
-                                <div class="bibTxt"><span>Eau de Vie</span><br>生命之水</div>
-                            </div>
-                        </div>
-                        <div class="bibBottom">
-                            为了确保干邑的香气达到至高且多元的境界，轩尼诗仅采用从四个产区精挑细选的生命之水，他们是大香槟区、小香槟区、波尔德里区和优质林区。荣幸中选的生命之水，有朝一日才能变成出类拔萃的轩尼诗干邑。<br><br>
-                        </div>
-                    </div>
-                    
                     <div class="clearfix"></div>
                 </div>
-                <div class="clearfix"></div>
             </div>
-        </div>
-        
-    </div>
-</div>
-<!--brand end-->
-
-<!--foot start-->
-<footer class="foot1">
-    <div class="container">
-        <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 footTop">
-            <div class="footTopContent anmBlock">
-                <div class="footMove">
-                    <div class="col-sm-4 col-xs-12 footContent">
-                        <div class="innerDiv"><a href="#1">
-                            <div class="fcTop"><img src="images/footImg1.png" width="100%"></div>
-                            <div class="fcBottom">
-                                <div class="fcbTitle">
-                                    <div class="fcbt1">深夜总是量产，微醺的手痒</div>
-                                    <div class="fcbt2">人人都是后现实魔幻浪漫主义印象派创作家......</div>
-                                </div>
-                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </a></div>
+            
+            <div class="brandLine brandLine2">
+                <div class="innerDiv">
+                    <div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine2Left anmBlock">
+                        <img src="images/brand/b_20.png" width="100%" class="needShowa" style="opacity:0;">
                     </div>
-                    <div class="col-sm-4 col-xs-12 footContent">
-                        <div class="innerDiv"><a href="#2">
-                            <div class="fcTop"><img src="images/footImg2.png" width="100%"></div>
-                            <div class="fcBottom">
-                                <div class="fcbTitle">
-                                    <div class="fcbt1">在穿越这件事儿上，最有发言权的都在这里</div>
-                                    <div class="fcbt2">迷恋穿越［绿］的人，想象力一定不会太差！</div>
-                                </div>
-                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
-                                    <div class="clearfix"></div>
-                                </div>
+                    <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine2Right anmBlock">
+                        <div class="brandLineRightContent needShowb" style="opacity:0;">
+                            <div class="brandTitle">
+                                <div class="brandEnTitle"></div>
+                                轩尼诗新点 20CL
                             </div>
-                        </a></div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12 footContent">
-                        <div class="innerDiv"><a href="#3">
-                            <div class="fcTop"><img src="images/footImg3.png" width="100%"></div>
-                            <div class="fcBottom">
-                                <div class="fcbTitle">
-                                    <div class="fcbt1">为了小绿瓶！｜涂鸦活动开奖ing，人气王将登场</div>
-                                    <div class="fcbt2">愿创意与小绿瓶你们同在...</div>
-                                </div>
-                                <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
-                                    <div class="clearfix"></div>
-                                </div>
+                            <div class="brandContext">轩尼诗新点20CL小绿瓶专为潮客们而设计，荧光绿的瓶身彰显年轻个性，小巧的体积任你随心携带，派对<br>ALL THE TIME！</div>
+                            <div class="brandBuyLink">
+                                立 即 购 买<a href="#"><img src="images/footIcon2.png" width="36"></a> <a href="#"><img src="images/footIcon3.png" width="36"></a>
                             </div>
-                        </a></div>
+                        </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="footNav mobileShow"><span class="fnActive">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+            
+            <div class="brandLine brandLine3">
+                <div class="innerDiv">
+                    <div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine3Left anmBlock">
+                        <img src="images/brand/b_150.png" width="100%" class="needShowa" style="opacity:0;">
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine3Right anmBlock">
+                        <div class="brandLineRightContent needShowb" style="opacity:0;">
+                            <div class="brandTitle">
+                                <div class="brandEnTitle"></div>
+                                轩尼诗新点 150CL
+                            </div>
+                            <div class="brandContext">轩尼诗新点150CL，馥郁辛香的口感令人回味无穷。派对霸王一出惊艳全场，大瓶装更适合与众人共分享，满足全场亲朋好友。</div>
+                            <div class="brandBuyLink">
+                                立 即 购 买<a href="#"><img src="images/footIcon2.png" width="36"></a> <a href="#"><img src="images/footIcon3.png" width="36"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <div class="brandLine brandLine4">
+                <div class="innerDiv">
+                    <div class=" col-md-5 col-md-offset-2 col-sm-7 col-xs-12 brandLineLeft brandLine4Left anmBlock">
+                        <div class="brandLineLeftContent needShowa" style="opacity:0;">
+                            <div class="brandTitle">
+                                <div class="brandEnTitle"></div>
+                                乐享新点
+                            </div>
+                            <div class="brandContext">颜色深赭色<br>
+                            嗅感：富有活力的辛香，带些许薄荷气息<br>
+                            口感：胡椒、鲜捣生姜，带着淡淡薄荷味<br>
+                            饮用：纯饮、加冰块，或混合作为炫饮鸡尾酒也非常合适<br>
+                            建议搭配：脉动(青柠口味)、乌龙茶、雪碧等各种软饮</div>
+                            <div class="brandBuyBtn">
+                                <a href="javascript:void(0);" class="brandBtn">我 要 调 酒</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRight brandLine4Right anmBlock brandLineRightHasGreen">
+                    	<div class="innerDiv">
+                        	<div class="brandRightGreen pcShow"></div>
+                            <div class=" col-md-4 col-sm-6 col-xs-12 brandLineRightInner">
+                                <div class="brandLineRightContent needShowb" style="opacity:0; z-index:100;">
+                                    <div class="innerDiv">
+                                        <div class="brandTitle">
+                                            <div class="brandEnTitle"></div>
+                                            了解新点
+                                        </div>
+                                        <div class="brandContext"><br>原料：葡萄、焦糖色<br>
+                                        酒精度：40%vol<br>
+                                        原产地：法国<br>
+                                        储存方法：常温保存，避免阳光直射<br><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <div class="brandLine brandInfo">
+                <div class="innerDiv">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="biTop anmBlock">
+                            <div class="innerDiv">
+                                <img src="images/brand/infoTop.png" width="100%">
+                                <div class="bitTxt">干邑并非酿造<br>而是创造</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 biBottom">
+                        <div class="bibLeft anmBlock2">
+                            <div class="bibTop">
+                                <div class="innerDiv">
+                                    <img src="images/brand/info1.png" width="100%">
+                                    <div class="bibTxt"><span>Cognac</span><br>干邑白兰地</div>
+                                </div>
+                            </div>
+                            <div class="bibBottom">
+                                酒精浓度高于40度的酒即被称为烈酒，通常所说的白兰地，主要是指以葡萄为原料、经蒸馏浓缩制成的烈酒。但是，不是所有的白兰地都能被称之为干邑，只有在法国干邑镇——全世界优质干邑产区——生产的白兰地，并经过干邑生产监管组织认证的白兰地才可以称作干邑。
+                            </div>
+                        </div>
+                        
+                        <div class="bibRight anmBlock">
+                            <div class="bibTop">
+                                <div class="innerDiv">
+                                    <img src="images/brand/info2.png" width="100%">
+                                    <div class="bibTxt"><span>Eau de Vie</span><br>生命之水</div>
+                                </div>
+                            </div>
+                            <div class="bibBottom">
+                                为了确保干邑的香气达到至高且多元的境界，轩尼诗仅采用从四个产区精挑细选的生命之水，他们是大香槟区、小香槟区、波尔德里区和优质林区。荣幸中选的生命之水，有朝一日才能变成出类拔萃的轩尼诗干邑。<br><br>
+                            </div>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--brand end-->
+    
+    <!--foot start-->
+    <footer class="foot1">
+        <div class="container">
+            <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 footTop">
+                <div class="footTopContent anmBlock">
+                    <div class="footMove">
+                        <div class="col-sm-4 col-xs-12 footContent">
+                            <div class="innerDiv"><a href="#1">
+                                <div class="fcTop"><img src="images/footImg1.png" width="100%"></div>
+                                <div class="fcBottom">
+                                    <div class="fcbTitle">
+                                        <div class="fcbt1">深夜总是量产，微醺的手痒</div>
+                                        <div class="fcbt2">人人都是后现实魔幻浪漫主义印象派创作家......</div>
+                                    </div>
+                                    <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                            href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 footContent">
+                            <div class="innerDiv"><a href="#2">
+                                <div class="fcTop"><img src="images/footImg2.png" width="100%"></div>
+                                <div class="fcBottom">
+                                    <div class="fcbTitle">
+                                        <div class="fcbt1">在穿越这件事儿上，最有发言权的都在这里</div>
+                                        <div class="fcbt2">迷恋穿越［绿］的人，想象力一定不会太差！</div>
+                                    </div>
+                                    <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                            href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 footContent">
+                            <div class="innerDiv"><a href="#3">
+                                <div class="fcTop"><img src="images/footImg3.png" width="100%"></div>
+                                <div class="fcBottom">
+                                    <div class="fcbTitle">
+                                        <div class="fcbt1">为了小绿瓶！｜涂鸦活动开奖ing，人气王将登场</div>
+                                        <div class="fcbt2">愿创意与小绿瓶你们同在...</div>
+                                    </div>
+                                    <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
+                                            href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="footNav mobileShow"><span class="fnActive">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+                </div>
             </div>
         </div>
     </div>
@@ -291,17 +307,19 @@
     <div class="container">
         <div class="footQc"><img src="images/footQc.png">
             <div class="footQcTxt">关 注 轩 尼 诗 新 点 官 方 微 信</div>
-            <div class="footLogo"><img src="images/footLogo.png"></div>
+            <div class="footLogo"><img src="images/footLogo.png" width="157"></div>
         </div>
-        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png"></a></div>
+        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png" width="36"></a></div>
         <div class="footLink"><a href="#">条款及条件</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">隐私权政策</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">请理性享用轩尼诗干邑</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">访问轩尼诗全球官网</a>
         </div>
         <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow">沪ICP备10018200号</div>
     </div>
 </footer>
 <!--foot end-->
+
+<a href="javascript:void(0);" class="backToTop"><img src="images/backToTop.png"></a>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.touchSwipe.min.js"></script>

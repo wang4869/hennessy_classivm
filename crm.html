@@ -17,7 +17,7 @@
 
 <!--nav start-->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container" style="width:100%; max-width:1920px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -37,10 +37,10 @@
                 <li><a class="centerA" href="drink.html">新点炫饮</a></li>
                 <li class="active"><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
-                	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon3.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon4.png"></a>
+                	<a href="javascript:void(0);" onClick="showNavQc();"><img src="images/navIcon1.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon2.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon3.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon4.png" width="23"></a>
                 </div>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -51,25 +51,32 @@
             </ul>
         </div>
     </div>
+    
+    <div class="navQcBlock" style="display:none;">
+    	<div class="qcBg" onClick="closeNavQc();"></div>
+        <img src="images/navQc.png" width="147" height="140" class="navQc">
+        <a href="javascript:void(0);" class="navCloseBtn" onClick="closeNavQc();"><img src="images/navClose.png"></a>
+    </div>
 </nav>
 <!--nav end-->
 
 <!--crm kv start-->
 <div class="crmKv">
-	<div class="container" style="width:100%;">
-    	<div class="col-xs-12">
-        	<div class="innerDiv">
-            	<img src="images/crm/kv.png" width="100%" class="pcShow">
-            	<img src="images/crm/kv_m.png" width="100%" class="mobileShow">
-            	<div class="crmLogoLine pcShow">
-                	<img src="images/crm/crmLogo.png">
-                </div>
-                <div class="crmKvLine">
-                	<img src="images/crm/qc.png" class="qc"><p class="crmKvTxt">终于等到你！<br class="mobileShow">欢迎进入酩悦轩尼诗会员积分兑换系<br class="pcShow">统！<br class="mobileShow"><font class="pcShow">请用手机扫描二维码，</font>关注轩尼诗新点官方微<br class="pcShow">信，在底部菜单栏<br class="mobileShow">找到“会员中心”，即可查询积<br class="pcShow">分、兑换<br class="mobileShow">礼品和参与抽奖。</p>
+	<div class="container" style="width:100%; max-width:1920px;">
+    	<div class="innerDiv">
+            <div class="col-xs-12">
+                <div class="innerDiv">
+                    <img src="images/crm/kv_m.png" width="100%" class="mobileShow">
+                    <!--<div class="crmLogoLine pcShow">
+                        <img src="images/crm/crmLogo.png">
+                    </div>-->
+                    <div class="crmKvLine">
+                        <img src="images/crm/qc.png" class="qc"><p class="crmKvTxt">终于等到你！<br class="mobileShow">欢迎进入酩悦轩尼诗会员积分兑换系<br class="pcShow">统！<br class="mobileShow"><font class="pcShow">请用手机扫描二维码，</font>关注轩尼诗新点官方微<br class="pcShow">信，在底部菜单栏<br class="mobileShow">找到“会员中心”，即可查询积<br class="pcShow">分、兑换<br class="mobileShow">礼品和参与抽奖。</p>
+                    </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
     </div>
 </div>
 <!--crm kv end-->
@@ -89,7 +96,7 @@
                                     <div class="fcbt2">人人都是后现实魔幻浪漫主义印象派创作家......</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -104,7 +111,7 @@
                                     <div class="fcbt2">迷恋穿越［绿］的人，想象力一定不会太差！</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -119,7 +126,7 @@
                                     <div class="fcbt2">愿创意与小绿瓶你们同在...</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -137,17 +144,19 @@
     <div class="container">
         <div class="footQc"><img src="images/footQc.png">
             <div class="footQcTxt">关 注 轩 尼 诗 新 点 官 方 微 信</div>
-            <div class="footLogo"><img src="images/footLogo.png"></div>
+            <div class="footLogo"><img src="images/footLogo.png" width="157"></div>
         </div>
-        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png"></a></div>
+        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png" width="36"></a></div>
         <div class="footLink"><a href="#">条款及条件</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">隐私权政策</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">请理性享用轩尼诗干邑</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">访问轩尼诗全球官网</a>
         </div>
         <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow">沪ICP备10018200号</div>
     </div>
 </footer>
 <!--foot end-->
+
+<a href="javascript:void(0);" class="backToTop"><img src="images/backToTop.png"></a>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.touchSwipe.min.js"></script>

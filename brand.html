@@ -17,7 +17,7 @@
 
 <!--nav start-->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container" style="width:100%; max-width:1920px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -37,10 +37,10 @@
                 <li><a class="centerA" href="drink.html">新点炫饮</a></li>
                 <li><a class="centerA" href="crm.html">会员中心</a></li>
                 <div class="snsLine">
-                	<a href="javascript:void(0);"><img src="images/navIcon1.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon2.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon3.png"></a>
-                    <a href="javascript:void(0);"><img src="images/navIcon4.png"></a>
+                	<a href="javascript:void(0);" onClick="showNavQc();"><img src="images/navIcon1.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon2.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon3.png" width="23"></a>
+                    <a href="javascript:void(0);"><img src="images/navIcon4.png" width="23"></a>
                 </div>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -50,6 +50,12 @@
                 <li class="navIcon navIcon4"><a href="#"></a></li>
             </ul>
         </div>
+    </div>
+    
+    <div class="navQcBlock" style="display:none;">
+    	<div class="qcBg" onClick="closeNavQc();"></div>
+        <img src="images/navQc.png" width="147" height="140" class="navQc">
+        <a href="javascript:void(0);" class="navCloseBtn" onClick="closeNavQc();"><img src="images/navClose.png"></a>
     </div>
 </nav>
 <!--nav end-->
@@ -61,7 +67,7 @@
             <div class="innerDiv">
                 <div class="abs kvEf">
                 	<div class="innerDiv">
-                    	<a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');" class="abs kvVideo">年&nbsp;轻&nbsp;人&nbsp;都&nbsp;在&nbsp;看 <img
+                    	<a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');" class="abs kvVideo">年轻人都在看 <img
                         src="images/playBtn.png"></a>
                     </div>
                 </div>
@@ -74,182 +80,184 @@
 
 <!--index start-->
 <div class="indexBlock">
-    <div class="container">
-        <div class="indexTop">
-            <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 indexVideo">
-                <div class="topTitle">
-                    <div class="topEnTitle"> BREAK OUT<br>
-                        YOUR OWN<br>
-                        PATH
+	<div class="container containerBg" style="width:100%; max-width:1920px;">
+        <div class="container">
+            <div class="indexTop">
+                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 indexVideo">
+                    <div class="topTitle">
+                        <div class="topEnTitle"> BREAK OUT<br>
+                            YOUR OWN<br>
+                            PATH
+                        </div>
+                        就跟我闯
                     </div>
-                    就跟我闯
-                </div>
-                <div class="topContext">
-                    <div class="innerDiv"> 与其每天8小时陷入PPT的套路<br>
-                        不如跳进PPT，闯出一条自己的路<br>
-                        <br class="mobileShow">
-                        我好像不小心闯进了<br class="mobileShow">
-                        PPT的新奇世界里<br class="mobileShow">
-                        …… 
-                        <img src="images/quotationLeft.png" class="abs qLeft">
-                        <img src="images/quotationRight.png" class="abs qRight">
+                    <div class="topContext">
+                        <div class="innerDiv"> 与其每天8小时陷入PPT的套路<br>
+                            不如跳进PPT，闯出一条自己的路<br>
+                            <br class="mobileShow">
+                            我好像不小心闯进了<br class="mobileShow">
+                            PPT的新奇世界里<br class="mobileShow">
+                            …… 
+                            <img src="images/quotationLeft.png" class="abs qLeft">
+                            <img src="images/quotationRight.png" class="abs qRight">
+                        </div>
                     </div>
-                </div>
-                <div class="topVideo">
-                	<div class="innerDiv">
-                    	<a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');" class="abs tvPlayBtn"><img src="images/playBtn.png" class=""></a>
-                    	<a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');"><img src="images/topVideoBg.png" width="100%"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="indexLine1">
-        	<div class="lineBlock1 pcShow"></div>
-            <div class=" col-md-5 col-md-offset-2 col-sm-7 col-sm-offset-1 col-xs-12 indexLine1left anmBlock">
-                <div class="col-sm-9 needShow needShowa" style="opacity:0;">
-                    <div class="topTitle subTitle">
-                        <div class="topEnTitle subEnTitle"></div>
-                        舞出新点
-                    </div>
-                    <div class="subContext"> 撕掉别人给你的标签<br>
-                        打破一成不变的规则<br>
-                        舞出独一无二的自己<br>
-                        哪里都是你的主场！
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-7 col-xs-12 indexLine1Right anmBlock">
-            	<img src="images/index/line1Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
-                <img src="images/index/line1Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
-            </div>
-            <div class="indexLineBottom indexLine1Bottom anmBlock2">
-                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space1.png" width="100%">
-                            	<img src="images/index/img1.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg1.jpg" class="lGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space1.png" width="100%">
-                            	<img src="images/index/img2.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg2.jpg" class="lGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space1.png" width="100%">
-                            	<img src="images/index/img3.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space1.png" width="100%">
-                            	<img src="images/index/img4.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
-                                    </div>
-                                </div>
-                          	</div>
-                        </a>
+                    <div class="topVideo">
+                        <div class="innerDiv">
+                            <a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');" class="abs tvPlayBtn"><img src="images/playBtn.png" class=""></a>
+                            <a href="javascript:void(0);" onClick="playSingleVideo('XNjM4MjU2NTAw');"><img src="images/topVideoBg.png" width="100%"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="indexLine2">
-            <div class=" col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12  indexLine2left anmBlock" style="padding-top:80px;">
-                <div class="col-sm-12 needShow needShowa" style="opacity:0;">
-                    <div class="topTitle subTitle">
-                        <div class="topEnTitle subEnTitle"></div>
-                        闯出办公室<br>新点发布会
-                    </div>
-                    <div class="subContext">开会、加班、奋战......想逃离办公室？！<br>
-                    11月5日，一场开了挂的新点潮趴，<br>
-                    闯入压力山大的 OFFICE<br>
-                    办公室从此告别天然闷，迎来自由 HIGH ！
+            <div class="indexLine1">
+                <div class="lineBlock1 pcShow"></div>
+                <div class=" col-md-5 col-md-offset-2 col-sm-7 col-sm-offset-1 col-xs-12 indexLine1left anmBlock">
+                    <div class="col-sm-9 needShow needShowa" style="opacity:0;">
+                        <div class="topTitle subTitle">
+                            <div class="topEnTitle subEnTitle"></div>
+                            舞出新点
+                        </div>
+                        <div class="subContext"> 撕掉别人给你的标签<br>
+                            打破一成不变的规则<br>
+                            舞出独一无二的自己<br>
+                            哪里都是你的主场！
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-7 col-xs-12 indexLine2Right anmBlock">
-            	<div class="innerDiv">
-                	<div class="lineBlock2 pcShow needShowb" style="opacity:0;"></div>
-                    <img src="images/index/line2Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
-                    <img src="images/index/line2Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
+                <div class="col-md-6 col-sm-7 col-xs-12 indexLine1Right anmBlock">
+                    <img src="images/index/line1Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
+                    <img src="images/index/line1Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
                 </div>
-            </div>
-            <div class="indexLineBottom indexLine2Bottom anmBlock2">
-                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="col-sm-6 col-xs-12">
-                        <a href="images/index/galleyImg3.mp4" class="lGallery vGallery html5lightbox" data-group="gallery2">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space2.png" width="100%">
-                            	<img src="images/index/img6.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
+                <div class="indexLineBottom indexLine1Bottom anmBlock2">
+                    <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
+                                <div class="innerDiv">
+                                    <img src="images/index/space1.png" width="100%">
+                                    <img src="images/index/img1.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
                                     </div>
                                 </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="images/index/galleyImg6.jpg" class="lGallery html5lightbox" data-group="gallery2">
-                        	<div class="innerDiv">
-                            	<img src="images/index/space1.png" width="100%">
-                            	<img src="images/index/img5.png" class="cBgImg" width="100%">
-                                <div class="vCover anmBlock">
-                                	<div class="innerDiv">
-                                    	<img src="images/playBtn2.png">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="images/index/galleyImg1.jpg" class="lGallery html5lightbox" data-group="gallery1">
+                                <div class="innerDiv">
+                                    <img src="images/index/space1.png" width="100%">
+                                    <img src="images/index/img2.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
                                     </div>
                                 </div>
-                          	</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="innerDiv">
-                        	<a href="images/index/galleyImg5.jpg" class="html5lightbox" data-group="gallery2">
-                            	<div class="innerDiv">
-                        			<img src="images/block1.png" width="100%">
-                                    <div class="indexLine2BottomMore">
-                                    	查 看 更 多 <img src="images/block1RightArrow.png">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="images/index/galleyImg2.jpg" class="lGallery html5lightbox" data-group="gallery1">
+                                <div class="innerDiv">
+                                    <img src="images/index/space1.png" width="100%">
+                                    <img src="images/index/img3.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="images/index/galleyImg4.mp4" class="lGallery vGallery html5lightbox" data-group="gallery1">
+                                <div class="innerDiv">
+                                    <img src="images/index/space1.png" width="100%">
+                                    <img src="images/index/img4.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <a href="http://youku" vid="XNjM4MjU2NTAw" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
-                    <a href="http://youku" vid="XNjM4MjU0MDQw" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
-                    <a href="articleDetail.html" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
+                    <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
+            <div class="indexLine2">
+                <div class=" col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12  indexLine2left anmBlock" style="padding-top:80px;">
+                    <div class="col-sm-12 needShow needShowa" style="opacity:0;">
+                        <div class="topTitle subTitle">
+                            <div class="topEnTitle subEnTitle"></div>
+                            闯出办公室<br>新点发布会
+                        </div>
+                        <div class="subContext">开会、加班、奋战......想逃离办公室？！<br>
+                        11月5日，一场开了挂的新点潮趴，<br>
+                        闯入压力山大的 OFFICE<br>
+                        办公室从此告别天然闷，迎来自由 HIGH ！
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-7 col-xs-12 indexLine2Right anmBlock">
+                    <div class="innerDiv">
+                        <div class="lineBlock2 pcShow needShowb" style="opacity:0;"></div>
+                        <img src="images/index/line2Top.png" width="100%" class=" needShow needShowb pcShow" style="opacity:0;">
+                        <img src="images/index/line2Top_m.png" width="100%" class=" needShow needShowb mobileShow" style="opacity:0;">
+                    </div>
+                </div>
+                <div class="indexLineBottom indexLine2Bottom anmBlock2">
+                    <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="images/index/galleyImg3.mp4" class="lGallery vGallery html5lightbox" data-group="gallery2">
+                                <div class="innerDiv">
+                                    <img src="images/index/space2.png" width="100%">
+                                    <img src="images/index/img6.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="images/index/galleyImg6.jpg" class="lGallery html5lightbox" data-group="gallery2">
+                                <div class="innerDiv">
+                                    <img src="images/index/space1.png" width="100%">
+                                    <img src="images/index/img5.png" class="cBgImg" width="100%">
+                                    <div class="vCover anmBlock">
+                                        <div class="innerDiv">
+                                            <img src="images/playBtn2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="innerDiv">
+                                <a href="images/index/galleyImg5.jpg" class="html5lightbox" data-group="gallery2">
+                                    <div class="innerDiv">
+                                        <img src="images/block1.png" width="100%">
+                                        <div class="indexLine2BottomMore">
+                                            查 看 更 多 <img src="images/block1RightArrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="http://youku" vid="XNjM4MjU2NTAw" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
+                        <a href="http://youku" vid="XNjM4MjU0MDQw" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
+                        <a href="articleDetail.html" class="html5lightbox" data-group="gallery2" style="display:none;"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -270,7 +278,7 @@
                                     <div class="fcbt2">人人都是后现实魔幻浪漫主义印象派创作家......</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -285,7 +293,7 @@
                                     <div class="fcbt2">迷恋穿越［绿］的人，想象力一定不会太差！</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -300,7 +308,7 @@
                                     <div class="fcbt2">愿创意与小绿瓶你们同在...</div>
                                 </div>
                                 <div class="fcbLink"><a href="javascript:void(0);" class="fcbBtn1">点击查看</a> <a
-                                        href="javascript:void(0);" class="fcbBtn2"><img src="images/footWechat.png"></a>
+                                        href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="images/footWechat.png"></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -318,11 +326,11 @@
     <div class="container">
         <div class="footQc"><img src="images/footQc.png">
             <div class="footQcTxt">关 注 轩 尼 诗 新 点 官 方 微 信</div>
-            <div class="footLogo"><img src="images/footLogo.png"></div>
+            <div class="footLogo"><img src="images/footLogo.png" width="157"></div>
         </div>
-        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png"></a> <a
-                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png"></a></div>
+        <div class="footSns"><a href="javascript:void(0);" class="fsBtn"><img src="images/footIcon1.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon2.png" width="36"></a> <a
+                href="javascript:void(0);" class="fsBtn"><img src="images/footIcon3.png" width="36"></a></div>
         <div class="footLink"><a href="#">条款及条件</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">隐私权政策</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">请理性享用轩尼诗干邑</a><br class="mobileShow"><font class="pcShow"><img src="images/footPoint.png"></font><a href="#">访问轩尼诗全球官网</a>
         </div>
         <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow">沪ICP备10018200号</div>
@@ -337,6 +345,10 @@
 </div>
 <!--youku video end-->
 
+<a href="javascript:void(0);" class="backToTop"><img src="images/backToTop.png"></a>
+
+
+<script src="js/preloadjs-0.6.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/html5lightbox/html5lightbox.js"></script>
@@ -350,6 +362,7 @@
 $(document).ready(function(){
 	indexPos();
 	indexScorll();
+	loadIndexImg();
 	});
 //单页窗口大小改变
 $(window).resize(function(){
