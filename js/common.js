@@ -298,8 +298,14 @@ function closeArticleDetail(){
 //Brand位置获取
 function brandPos(){
 	//brand kv全屏
-	$('.kvBg').height(wHeight-50);
-	$('.kvBg .col-xs-12').height(wHeight-50);
+	if(wWidth>767){
+		$('.kvBg').height(wHeight-50);
+		$('.kvBg .col-xs-12').height(wHeight-50);
+		}
+		else{
+			$('.kvBg').height('auto');
+			$('.kvBg .col-xs-12').height('auto');
+			}
 	
 	
 	//brand 内容块1 延时显示内容、缓动内容

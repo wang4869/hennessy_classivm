@@ -321,8 +321,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 	
 	.brandTitle{width:200px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
 	.brandTitleEnTitle{ font-size:20px; line-height:20px;}
-	.bkLogo{width:15.6774193548387%;}
-	.bkBottle{width:16.4838709677419%;}
+	.bkLogo{width:11.6774193548387%;}
+	.bkBottle{width:12.4838709677419%;}
 	.brandLineRight{ position:static; padding:90px 0;}
 	.brandLine{ padding-bottom:0;}
 	.brandInfo{ padding-top:50px; padding-bottom:50px;}
@@ -364,7 +364,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.crmKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
 	.crmKv .col-xs-12{ height:auto;}
 	
-	.partyKvQc{padding-top:80px; width:100%; text-align:center;}
+	.partyKvQc{padding-top:80px; width:100%; text-align:center; background:url(../images/mobileBgT.jpg) left bottom no-repeat #262324;}
 	.partyKvLine img.qc{ margin-right:0; float:none;}
 	.partyKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
 	
