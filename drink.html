@@ -5,6 +5,8 @@
     <title>新点</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="bookmark" href="favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -86,11 +88,12 @@
         <div class="container">
             <div class="col-md-10 col-md-offset-1 col-sm-12 dnOuter">
             	<div class="col-xs-12 dnTop">
-                	<div class="col-xs-6 dnTab dnTabActive"><a href="javascript:void(0);">经典主打</a></div>
-                    <div class="col-xs-6 dnTab"><a href="javascript:void(0);">季节特供</a></div>
+                	<div class="col-xs-6 dnTab dnTabActive"><a href="javascript:void(0);" onClick="changeDnTab(0);">经典主打</a></div>
+                    <div class="col-xs-6 dnTab"><a href="javascript:void(0);" onClick="changeDnTab(1);">季节特供</a></div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-sm-4 dnCol">
+                <div class="dtContent dtContent1">
+					<div class="col-sm-4 dnCol">
                 	<div class="dnColTitle" onClick="showThisDirks(this);">清新脱俗基本款 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
                     <ul>
                     	<li>
@@ -104,39 +107,90 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 dnCol dnColHaveBorder">
-                    <div class="dnColTitle" onClick="showThisDirks(this);">气场全开进阶版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                    <div class="col-sm-4 dnCol dnColHaveBorder">
+                        <div class="dnColTitle" onClick="showThisDirks(this);">气场全开进阶版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" at="#d4">霸道总裁</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d5">颜值担当</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d6">女王大人</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d7">文艺范儿</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d8">国民初恋</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d9">21岁小鲜肉</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 dnCol">
+                        <div class="dnColTitle" onClick="showThisDirks(this);">创意巅峰终极版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" at="#d10">温柔大魔王</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d11">网红界清流</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dtContent dtContent2">
+					<div class="col-sm-4 dnCol">
+                	<div class="dnColTitle" onClick="showThisDirks(this);">清新脱俗基本款 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
                     <ul>
                     	<li>
-                        	<a href="javascript:void(0);" at="#d4">霸道总裁</a>
+                        	<a href="javascript:void(0);" at="#d1">国民老干部2</a>
                         </li>
                         <li>
-                        	<a href="javascript:void(0);" at="#d5">颜值担当</a>
+                        	<a href="javascript:void(0);" at="#d2">行走的荷尔蒙</a>
                         </li>
                         <li>
-                        	<a href="javascript:void(0);" at="#d6">女王大人</a>
-                        </li>
-                        <li>
-                        	<a href="javascript:void(0);" at="#d7">文艺范儿</a>
-                        </li>
-                        <li>
-                        	<a href="javascript:void(0);" at="#d8">国民初恋</a>
-                        </li>
-                        <li>
-                        	<a href="javascript:void(0);" at="#d9">21岁小鲜肉</a>
+                        	<a href="javascript:void(0);" at="#d3">大潮咖</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 dnCol">
-                    <div class="dnColTitle" onClick="showThisDirks(this);">创意巅峰终极版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
-                    <ul>
-                    	<li>
-                        	<a href="javascript:void(0);" at="#d10">温柔大魔王</a>
-                        </li>
-                        <li>
-                        	<a href="javascript:void(0);" at="#d11">网红界清流</a>
-                        </li>
-                    </ul>
+                    <div class="col-sm-4 dnCol dnColHaveBorder">
+                        <div class="dnColTitle" onClick="showThisDirks(this);">气场全开进阶版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" at="#d4">霸道总裁</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d5">颜值担当</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d6">女王大人</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d7">文艺范儿</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d8">国民初恋</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d9">21岁小鲜肉</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 dnCol">
+                        <div class="dnColTitle" onClick="showThisDirks(this);">创意巅峰终极版 <img src="images/drink/drinkIcon3.png" class="drinkIcon3 mobileShow anmBlock"></div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" at="#d10">温柔大魔王</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" at="#d11">网红界清流</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>

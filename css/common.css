@@ -111,7 +111,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .indexLineBottom .innerDiv{ overflow:hidden;}
 
 /*footer*/
-.foot1{ background:#262324; padding-top:0px; padding-bottom:85px; border-bottom:5px solid #00ff50; margin-top:-5px;}
+.foot1{ background:#262324; padding-top:40px; padding-bottom:30px; border-bottom:5px solid #00ff50; margin-top:-5px;}
 .footTop{ overflow:hidden;}
 .footContent{ border-right:20px solid #00ff50; margin:0 1.1% 20px 1.1%; width:31%;}
 .footContent a:hover,.footContent a:focus{ color:inherit; text-decoration:none;}
@@ -217,13 +217,15 @@ select,input,textarea{font-family:inherit; outline:none;}
 /*.eventBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:250px; overflow:hidden;}*/
 .eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:350px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
 .eventTitleEnTitle{ font-size:26px; color:#00ff50; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
-.eventLine1,.eventLine2{ position:relative;}
+.eventLine1,.eventLine2,.eventLine3{ position:relative;}
+.eventLine1{ margin-top:50px;}
 .eventLine2{ margin-top:200px;}
-.eventLine1left,.eventLine2left{ border-left:20px solid #00ff50; background:#262324; padding:140px 0 100px 0; margin-bottom:200px; transform:translate(0,100px);}
+.eventLine1left,.eventLine2left,.eventLine3left{ border-left:20px solid #00ff50; background:#262324; padding:140px 0 100px 0; margin-bottom:200px; transform:translate(0,100px);}
 .eventLine1Right{ position:absolute; left:50%; top:260px/*200px*/;}
 .eventLine1Right img{ position:absolute; left:0; top:0;}
 .eventLine2Right{ position:absolute; left:50%; top:320px/*250px*/;}
-.eventLine1Bottom,.eventLine2Bottom{ position:absolute; left:0; top:520px; width:100%;}
+.eventLine3Right{ position:absolute; left:50%; top:320px/*250px*/;}
+.eventLine1Bottom,.eventLine2Bottom,.eventLine3Bottom{ position:absolute; left:0; top:520px; width:100%;}
 .eventLine2BottomMore{ font-size:16px; color:#FFF; height:30px; line-height:30px; position:absolute; left:0; top:50%; margin-top:-15px; width:100%; text-align:center;}
 .eventLine2BottomMore img{ margin-left:10px; vertical-align:-5px;}
 .eventLineBottom .innerDiv{ overflow:hidden;}
@@ -344,13 +346,16 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.brandLineLeftContent .brandBuyBtn{ width:330px; margin:0 auto;}
 	
 	.eventBlock .container{/* background-image:url(../images/event/eventBg_m.jpg);*/ padding-bottom:50px;}
-	.eventLine1left,.eventLine2left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
+	.eventLine1left,.eventLine2left,.eventLine3left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
 	.eventLine1Right{ position:static; left:auto; top:auto; bottom:auto;}
 	.eventLine2Right img{ position:static; left:auto; top:auto; bottom:auto;}
 	.eventLine2Right{ position:static; left:auto; top:auto; bottom:auto;}
+	.eventLine3Right{ position:static; left:auto; top:auto; bottom:auto;}
 	.eventLine1Bottom{ position:static; left:auto; top:auto; bottom:auto;}
 	.eventLine2Bottom{ position:static; left:auto; top:auto; bottom:auto;}
+	.eventLine3Bottom{ position:static; left:auto; top:auto; bottom:auto;}
 	.eventLine1Right img{ position:static; left:auto; top:auto; bottom:auto;}
+	.eventLine3Right img{ position:static; left:auto; top:auto; bottom:auto;}
 	.bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto {bottom:-30px;}
 	.eventLine2{ margin-top:50px;}
 	.eventTitle{ width:200px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}

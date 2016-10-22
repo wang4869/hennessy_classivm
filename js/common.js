@@ -114,11 +114,16 @@ function ftcSwipe(dir){
 	}
 
 //foot effect && backToTop
+var isGoingTop=false;
 function footeffect(){
 	$('.backToTop').click(function(){
-		$('html,body').animate({scrollTop: 0}, 500 ,'linear',function(){
-			$(window).scrollTop(0);
-			});
+		if(!isGoingTop){
+			isGoingTop=true;
+			$('html,body').animate({scrollTop:'0px'}, 500 ,'linear',function(){
+				//$(window).scrollTop(0);
+				isGoingTop=false;
+				});
+			}
 		});
 	var wstt=$(window).scrollTop();
 	if(wstt+50>wHeight){
@@ -190,7 +195,7 @@ var manifest;
 var preload;
 function loadIndexImg() {
 	manifest = [];
-	for(var i=1;i<=95;i++){
+	for(var i=1;i<=65;i++){
 		var s=i;
 		s=s.toString();
 		if(s.length==1){
@@ -211,12 +216,12 @@ function startPreload() {
     preload.loadManifest(manifest);
   }
 function loadComplete(event) {
-	kvt=setInterval(function(){playKv()},50);
+	kvt=setInterval(function(){playKv()},35);
 	}
 
 var kvt;
 var kvs=1;
-var kvm=95;
+var kvm=65;
 function playKv(){
 	if(kvs>kvm){
 		clearInterval(kvt);
@@ -332,7 +337,7 @@ function brandPos(){
 	sbw4=parseInt($('.brandLine4Left').height());
 	sbh4=sb4+sbw4;
 	
-	//brand 内容块5 延时显示内容、缓动内容
+	//brand 内容块 延时显示内容、缓动内容
 	sb5=parseInt($('.biTop').offset().top)+200;
 	sbw5=parseInt($('.biTop').height());
 	sbh5=sb5+sbw5;
@@ -341,6 +346,12 @@ function brandPos(){
 	sb6=parseInt($('.bibLeft').offset().top)+200;
 	sbw6=parseInt($('.bibLeft').height());
 	sbh6=sb6+sbw6;
+	
+	//brand 内容块7 延时显示内容、缓动内容
+	nb7=parseInt($('.brandLine5 .needShowa').offset().top);
+	sb7=parseInt($('.brandLine5Left').offset().top)+200;
+	sbw7=parseInt($('.brandLine5Left').height());
+	sbh7=sb5+sbw7;
 	}
 	
 //Brand滚动事件
@@ -432,6 +443,21 @@ function brandScorll(){
 				$('.bibRight').css('transform','translate(0,'+sy/15+'px)');
 				}
 			}
+			
+	if(this_scrollTop1>=nb7){
+		$('.brandLine5 .needShowa,.brandLine5 .needShowb').css('opacity',1);
+		}
+	if(wWidth<=767){
+		$('.brandLine5Left').css('transform','translate(0,0)');
+		$('.brandLine5Right').css('transform','translate(0,0');
+		}
+		else{
+			if(this_scrollTop2>sb7&&this_scrollTop2<(sbh7)){
+				var sy=(this_scrollTop2-sb7);
+				$('.brandLine5Left').css('transform','translate(0,'+(0-sy/15)+'px)');
+				$('.brandLine5Right').css('transform','translate(0,'+sy/10+'px)');
+				}
+			}
 	}
 
 
@@ -448,6 +474,12 @@ function eventPos(){
 	sb2=parseInt($('.eventLine2left').offset().top)+200;
 	sbw2=parseInt($('.eventLine2left').height());
 	sbh2=sb2+sbw2;
+	
+	//活动 内容块3 延时显示内容、缓动内容
+	nb3=parseInt($('.eventLine3 .needShowa').offset().top);
+	sb3=parseInt($('.eventLine3left').offset().top)+200;
+	sbw3=parseInt($('.eventLine3left').height());
+	sbh3=sb3+sbw3;
 	}
 	
 //活动滚动事件
@@ -486,6 +518,22 @@ function eventScorll(){
 				$('.eventLine2left').css('transform','translate(0,'+(parseInt(200-sy/10))+'px)');
 				$('.eventLine2Bottom').css('transform','translate(0,'+sy/8+'px)');
 				$('.eventLine2Right').css('transform','translate(0,'+sy/8+'px)');
+				}
+			}
+			
+	if(this_scrollTop1>=nb3){
+		$('.eventLine3 .needShowa,.eventLine3 .needShowb').css('opacity',1);
+		}
+	if(wWidth<=767){
+		$('.eventLine3left').css('transform','translate(0,0)');
+		$('.eventLine3Right').css('transform','translate(0,0');
+		}
+		else{
+			if(this_scrollTop2>sb3&&this_scrollTop2<(sbh3+wHeight)){
+				var sy=(this_scrollTop2-sb3);
+				$('.eventLine3left').css('transform','translate(0,'+(parseInt(200-sy/10))+'px)');
+				$('.eventLine3Bottom').css('transform','translate(0,'+sy/8+'px)');
+				$('.eventLine3Right').css('transform','translate(0,'+sy/8+'px)');
 				}
 			}
 	}
@@ -762,6 +810,13 @@ function showThisDirks(e){
 				$(e).find('.drinkIcon3').css('transform','rotate(0deg)');
 				}
 		}
+	}
+	
+function changeDnTab(e){
+	$('.dnTab').removeClass('dnTabActive');
+	$('.dtContent').hide();
+	$('.dnTab').eq(e).addClass('dnTabActive');
+	$('.dtContent').eq(e).show();
 	}
 	
 function showNavQc(){
