@@ -215,7 +215,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .eventBlock{ background:url(../images/pcBgB.png) left bottom no-repeat; max-width:1920px; margin:0 auto; margin-top:-5px;}
 .eventBlock .containerBg{  background:url(../images/pcBgT.png) center top no-repeat; padding-bottom:250px; overflow:hidden;}
 /*.eventBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:250px; overflow:hidden;}*/
-.eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:350px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:250px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
 .eventTitleEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
 .eventLine1,.eventLine2,.eventLine3{ position:relative;}
 .eventLine1{ margin-top:50px;}
@@ -232,8 +232,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 .eventSubTitle{ width:350px;}
 
 /*crm*/
-.crmKv .container{ background:url(../images/crm/kv.png) center top no-repeat; height:500px; background-size:auto 100%;}
-.crmKv .crmOuter{ height:500px;}
+.crmKv .container{/* background:url(../images/crm/kv.png) center top no-repeat; height:500px; background-size:auto 100%;*/}
+.crmKv .crmOuter{/* height:500px;*/}
 .crmLogoLine{ position:absolute; left:0; top:29%; text-align:center; width:100%;}
 .crmKvLine{ text-align:center; position:absolute; left:50%; top:35%; width:600px; margin:0 0 0 -350px;}
 .crmKvLine img.qc{ margin-right:50px; float:left;}
@@ -392,7 +392,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.partyKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
 	
 	
-	.drinkTitle{ margin-left:-50px; width:120px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto; top:35%;}
+	.drinkTitle{ margin-left:-50px; width:120px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto; top:45%;}
 	.drinkEnTitle{ font-size:20px; line-height:20px;}
 	
 	.drinkSubTitle{ width:280px; padding:4px 0 20px 5px; font-size:24px; line-height:26px;  background-size:110px auto;}
