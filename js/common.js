@@ -190,12 +190,13 @@ function indexPos(){
 	sbw2=parseInt($('.indexLine2left').height());
 	sbh2=sb2+sbw2;
 	}
-	
+		
 var manifest;
 var preload;
 function loadIndexImg() {
 	manifest = [];
-	for(var i=1;i<=65;i++){
+	manifest.push('images/index/kvBg.jpg');
+	for(var i=1;i<=66;i++){
 		var s=i;
 		s=s.toString();
 		if(s.length==1){
@@ -221,8 +222,11 @@ function loadComplete(event) {
 
 var kvt;
 var kvs=1;
-var kvm=65;
+var kvm=66;
 function playKv(){
+	if(kvs==1){
+		$('.staticKv .jumbotron').css('opacity',1);
+		}
 	if(kvs>kvm){
 		clearInterval(kvt);
 		return false;
@@ -825,3 +829,4 @@ function showNavQc(){
 function closeNavQc(){
 	$('.navQcBlock').hide();
 	}
+	

@@ -96,13 +96,13 @@
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;*/
-	display:inline-block; width:20px; background:none; height:4px; overflow:hidden; border:1px solid #00ff50; margin:0 5px;
+	display:inline-block; width:20px; background:none; height:4px; overflow:hidden; border:1px solid #48D731; margin:0 5px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
 	/*background: #000;*/
-	 background:#00ff50;
+	 background:#48D731;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
