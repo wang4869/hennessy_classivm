@@ -376,7 +376,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.eventLine3Right img{ position:static; left:auto; top:auto; bottom:auto;}
 	.bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto {bottom:-30px;}
 	.eventLine2{ margin-top:50px;}
-	.eventTitle{ width:200px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
+	.eventTitle{ width:140px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
 	.eventTitleEnTitle{ font-size:20px; line-height:20px;}
 	.eventSubTitle{ width:200px;}
 	
