@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>新点</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="bookmark" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body style="padding:0;">
+<style>
+.errorBg{ background:#262324;}
+.errorContent{ width:650px; height:500px; position:fixed; left:50%; top:50%; margin:-250px 0 0 -325px; background:url(images/error.jpg) -200px -40px no-repeat; overflow:hidden;}
+.txt2{ position:absolute; left:290px; top:190px; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei'; color:#52da3F; font-size:14px; line-height:36px; padding:0; letter-spacing:3px;}
+.txt2 font{ font-size:90px;}
+.txt2 span{ font-size:26px;}
+.errorBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #52da3F; font-weight:bold; background:url(images/footBtnArrow.png) 70px 8px no-repeat; float:left; font-size:14px; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei'; position:absolute; left:290px; top:300px;}
+.errorBtn:focus,.errorBtn:hover{ color:#FFF;}
+</style>
+<div class="errorBg">
+	<div class="errorContent">
+    	<div class="txt2">
+        	<font>404</font><span> error</span><br>
+            槽糕！你要访问的网页离家出走了...
+        </div>
+        <a href="javascript:void(0);" class="errorBtn">带 我 走</a>
+    </div>
+</div>
+
+<script>
+var wHeight;
+function errorSize(){
+	wHeight=$(window).height();
+	$('.errorBg').height(wHeight);
+	}
+	
+function choseNote(){
+	if($('.noteSel').hasClass('noteSelOn')){
+		$('.noteSel').removeClass('noteSelOn');
+		}
+		else{
+			$('.noteSel').addClass('noteSelOn');
+			}
+	}
+	
+function testAnim(t,x) {
+    $(t).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+	function(){
+		$(this).removeClass();
+		});
+	};
+	
+function agreeNote(){
+	if($('.noteSel').hasClass('noteSelOn')){
+		//同意 加入缓存cookie 并跳转页面
+		window.location.href="index.html";
+		}
+		else{
+			testAnim('#noteBtn','shake');
+			}
+	}
+
+//单页加载完毕
+$(document).ready(function(){
+	errorSize();
+	});
+//单页窗口大小改变
+$(window).resize(function(){
+	errorSize();
+	});
+//单页滚动
+$(window).scroll(function(){
+	
+	});
+</script>
+
+</body>
